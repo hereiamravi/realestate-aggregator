@@ -1,0 +1,607 @@
+openapi: 3.0.3
+info:
+  title: RealEstate Instagram Feed Aggregator API
+  version: 1.0.0
+  description: |
+    API for aggregating Instagram posts from curated channels. Client endpoints are rate-limited and require an API key. Admin endpoints require a bearer token with admin scope.
+servers:
+  - url: https://api.example.com/v1
+    description: Production server (replace with real host)
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  schemas:
+    ErrorResponse:
+      type: object
+      properties:
+        code:
+          type: integer
+        message:
+          type: string
+      required: [code, message]
+
+    CursorResponse:
+      type: object
+      properties:
+        next_cursor:
+          type: string
+          nullable: true
+        page_size:
+          type: integer
+
+    MediaItem:
+      type: object
+      properties:
+        url:
+          type: string
+          format: uri
+        type:
+          type: string
+          enum: [image, video]
+        width:
+          type: integer
+        height:
+          type: integer
+        duration:
+          type: number
+          format: float
+      required: [url, type]
+
+    PriceObject:
+      type: object
+      properties:
+        raw:
+          type: string
+        value:
+          type: number
+        currency:
+          type: string
+
+    ExtractedFields:
+      type: object
+      properties:
+        property_type:
+          type: string
+          description: plots|flats|lands|other
+        price:
+          $ref: '#/components/schemas/PriceObject'
+        location:
+          type: string
+        area:
+          type: string
+
+    Channel:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        instagram_handle:
+          type: string
+        display_name:
+          type: string
+        profile_url:
+          type: string
+          format: uri
+        source:
+          type: string
+        enabled:
+          type: boolean
+        last_fetched_at:
+          type: string
+          format: date-time
+        metadata:
+          type: object
+          description: provider metadata (bio, follower_count, ...)
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+      required: [id, instagram_handle, source]
+
+    Post:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        instagram_post_id:
+          type: string
+        shortcode:
+          type: string
+        channel_id:
+          type: string
+          format: uuid
+        original_url:
+          type: string
+          format: uri
+        caption:
+          type: string
+        media:
+          type: array
+          items:
+            $ref: '#/components/schemas/MediaItem'
+        media_type:
+          type: string
+          enum: [image, video, carousel]
+        timestamp:
+          type: string
+          format: date-time
+        likes_count:
+          type: integer
+        comments_count:
+          type: integer
+        extracted:
+          $ref: '#/components/schemas/ExtractedFields'
+        source:
+          type: string
+        raw_payload:
+          type: object
+          description: Original provider JSON (opaque)
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+        is_removed:
+          type: boolean
+      required: [id, channel_id, media]
+
+    PostListResponse:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/Post'
+        next_cursor:
+          type: string
+          nullable: true
+        page_size:
+          type: integer
+
+    Bookmark:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        user_id:
+          type: string
+          format: uuid
+        post_id:
+          type: string
+          format: uuid
+        created_at:
+          type: string
+          format: date-time
+
+    FetchLog:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        channel_id:
+          type: string
+          format: uuid
+        job_id:
+          type: string
+        started_at:
+          type: string
+          format: date-time
+        finished_at:
+          type: string
+          format: date-time
+        status:
+          type: string
+        details:
+          type: object
+
+  parameters:
+    PageSizeParam:
+      name: page_size
+      in: query
+      description: Number of items to return
+      schema:
+        type: integer
+        default: 25
+        maximum: 100
+    CursorParam:
+      name: cursor
+      in: query
+      description: Opaque cursor for cursor-based pagination
+      schema:
+        type: string
+    ChannelIdParam:
+      name: channel_id
+      in: query
+      schema:
+        type: string
+        format: uuid
+    PropertyTypeParam:
+      name: property_type
+      in: query
+      schema:
+        type: string
+        enum: [plots, flats, lands, other]
+    QParam:
+      name: q
+      in: query
+      schema:
+        type: string
+      description: Keyword search on caption and extracted fields
+    FromDateParam:
+      name: from_date
+      in: query
+      schema:
+        type: string
+        format: date
+    ToDateParam:
+      name: to_date
+      in: query
+      schema:
+        type: string
+        format: date
+    MediaTypeParam:
+      name: media_type
+      in: query
+      schema:
+        type: string
+        enum: [image, video, carousel]
+
+paths:
+  /feed:
+    get:
+      summary: Get aggregated feed
+      description: Returns a paginated list of posts aggregated across enabled channels. Supports filtering and keyword search.
+      security:
+        - ApiKeyAuth: []
+      parameters:
+        - $ref: '#/components/parameters/PageSizeParam'
+        - $ref: '#/components/parameters/CursorParam'
+        - $ref: '#/components/parameters/ChannelIdParam'
+        - $ref: '#/components/parameters/PropertyTypeParam'
+        - $ref: '#/components/parameters/QParam'
+        - $ref: '#/components/parameters/FromDateParam'
+        - $ref: '#/components/parameters/ToDateParam'
+        - $ref: '#/components/parameters/MediaTypeParam'
+      responses:
+        '200':
+          description: Paginated list of posts
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostListResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /posts/{post_id}:
+    get:
+      summary: Get post details
+      description: Returns full details for a post by id
+      security:
+        - ApiKeyAuth: []
+      parameters:
+        - name: post_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Post details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Post'
+        '404':
+          description: Post not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /channels:
+    get:
+      summary: List channels
+      description: Returns tracked channels. By default only enabled channels are returned.
+      security:
+        - ApiKeyAuth: []
+      parameters:
+        - name: include_inactive
+          in: query
+          schema:
+            type: boolean
+            default: false
+      responses:
+        '200':
+          description: List of channels
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Channel'
+
+  /channels/{channel_id}:
+    get:
+      summary: Get channel metadata
+      security:
+        - ApiKeyAuth: []
+      parameters:
+        - name: channel_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Channel details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Channel'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /bookmarks:
+    get:
+      summary: Get bookmarks for authenticated user
+      security:
+        - ApiKeyAuth: []
+      parameters:
+        - $ref: '#/components/parameters/PageSizeParam'
+        - $ref: '#/components/parameters/CursorParam'
+      responses:
+        '200':
+          description: Paginated bookmarks
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Bookmark'
+                  next_cursor:
+                    type: string
+                    nullable: true
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+    post:
+      summary: Create a bookmark for the authenticated user
+      security:
+        - ApiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                post_id:
+                  type: string
+                  format: uuid
+              required: [post_id]
+      responses:
+        '201':
+          description: Bookmark created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Bookmark'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /bookmarks/{bookmark_id}:
+    delete:
+      summary: Delete a bookmark
+      security:
+        - ApiKeyAuth: []
+      parameters:
+        - name: bookmark_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '204':
+          description: Deleted
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /admin/channels:
+    post:
+      summary: Create a tracked channel
+      description: Admin endpoint to register a new Instagram channel to track
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                instagram_handle:
+                  type: string
+                profile_url:
+                  type: string
+                  format: uri
+                source:
+                  type: string
+                enabled:
+                  type: boolean
+              required: [instagram_handle, source]
+      responses:
+        '201':
+          description: Channel created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Channel'
+        '401':
+          description: Unauthorized
+
+  /admin/channels/{channel_id}:
+    patch:
+      summary: Update channel
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: channel_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                enabled:
+                  type: boolean
+                display_name:
+                  type: string
+      responses:
+        '200':
+          description: Updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Channel'
+        '404':
+          description: Not found
+
+  /admin/channels/{channel_id}/fetch:
+    post:
+      summary: Trigger immediate fetch for a channel
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: channel_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '202':
+          description: Accepted; job enqueued
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  job_id:
+                    type: string
+        '404':
+          description: Channel not found
+
+  /admin/webhook:
+    post:
+      summary: Provider webhook endpoint
+      description: Accepts webhook events from third-party provider (new post / post updated). Validate provider signature.
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad request
+
+  /admin/fetch-logs:
+    get:
+      summary: Query fetch logs
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: channel_id
+          in: query
+          schema:
+            type: string
+            format: uuid
+        - name: status
+          in: query
+          schema:
+            type: string
+      responses:
+        '200':
+          description: List of fetch logs
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FetchLog'
+
+
+security:
+  - ApiKeyAuth: []
+
+
+# Example server-level tags and contact info (optional)
+tags:
+  - name: client
+    description: Endpoints for mobile/web clients
+  - name: admin
+    description: Admin and internal endpoints
+
+
+# Example: small sample usage (not machine-checked)
+# GET /feed?page_size=20&property_type=plots
+# Headers: X-API-Key: your-client-key

@@ -1,0 +1,58 @@
+{
+  "items": [
+    {
+      "id": "11111111-1111-4111-8111-111111111111",
+      "instagram_post_id": "17901234567890123",
+      "shortcode": "CvXyZ_AbC",
+      "channel_id": "realtor_xyz",
+      "original_url": "https://www.instagram.com/p/CvXyZ_AbC/",
+      "caption": "Open plot for sale near Lakeview. Price: ₹25L per cent. Contact: 99999...",
+      "media": [
+        { "url": "https://via.placeholder.com/1080", "type": "image", "width": 1080, "height": 1080 }
+      ],
+      "media_type": "image",
+      "timestamp": "2026-08-18T09:30:00Z",
+      "likes_count": 320,
+      "comments_count": 12,
+      "extracted": {
+        "property_type": "plots",
+        "price": { "raw": "₹25L per cent", "value": 2500000, "currency": "INR" },
+        "location": "Lakeview",
+        "area": "200 sq yards"
+      },
+      "source": "mock",
+      "raw_payload": {},
+      "created_at": "2026-08-18T09:31:00Z",
+      "updated_at": "2026-08-18T09:31:00Z",
+      "is_removed": false
+    },
+    {
+      "id": "22222222-2222-4222-8222-222222222222",
+      "instagram_post_id": "17909876543210987",
+      "shortcode": "DqAbC_DeF",
+      "channel_id": "apartment_abc",
+      "original_url": "https://www.instagram.com/p/DqAbC_DeF/",
+      "caption": "Spacious 2BHK flat available near Downtown. Price: ₹75L. Contact: 88888...",
+      "media": [
+        { "url": "https://via.placeholder.com/800x600", "type": "image", "width": 800, "height": 600 }
+      ],
+      "media_type": "image",
+      "timestamp": "2026-08-19T11:00:00Z",
+      "likes_count": 120,
+      "comments_count": 8,
+      "extracted": {
+        "property_type": "flats",
+        "price": { "raw": "₹75L", "value": 7500000, "currency": "INR" },
+        "location": "Downtown",
+        "area": "900 sq ft"
+      },
+      "source": "mock",
+      "raw_payload": {},
+      "created_at": "2026-08-19T11:01:00Z",
+      "updated_at": "2026-08-19T11:01:00Z",
+      "is_removed": false
+    }
+  ],
+  "next_cursor": null,
+  "page_size": 25
+}
