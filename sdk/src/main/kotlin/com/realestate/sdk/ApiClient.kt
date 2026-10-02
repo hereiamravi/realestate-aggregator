@@ -1,6 +1,7 @@
 package com.realestate.sdk
 
 import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import java.util.concurrent.TimeUnit
@@ -12,7 +13,9 @@ class ApiClient private constructor(
 ) {
   companion object {
     fun create(baseUrl: String, apiKey: String? = null, bearerToken: String? = null, timeoutSeconds: Long = 30): ApiClient {
-      val moshi = Moshi.Builder().build()
+      val moshi = Moshi.Builder()
+        .add(KotlinJsonAdapterFactory())
+        .build()
 
       val clientBuilder = OkHttpClient.Builder()
         .connectTimeout(timeoutSeconds, TimeUnit.SECONDS)

@@ -1,8 +1,8 @@
 package com.realestate.sample
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -10,7 +10,7 @@ import com.realestate.sdk.ApiClient
 import com.realestate.sdk.models.Post
 import kotlinx.coroutines.launch
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
     private val viewModel: FeedViewModel by viewModels()
     private val bookmarksViewModel: BookmarksViewModel by viewModels()
     private lateinit var adapter: FeedAdapter
@@ -71,17 +71,15 @@ class MainActivity : ComponentActivity() {
             }
         })
 
-        // Configure your API base URL and API key here for the sample
-        // For emulator: use http://10.0.2.2:8080/v1/ to reach the host mock server (serves /v1/feed)
-        val client = ApiClient.create(baseUrl = "http://10.0.2.2:8080/v1/", apiKey = "YOUR_CLIENT_API_KEY")
-        viewModel.initClient(baseUrl = "http://10.0.2.2:8080/v1/", apiKey = "YOUR_CLIENT_API_KEY")
+        // Configure API client with fallback handling
+        val client = ApiClient.create(baseUrl = "http://localhost:8080/v1/", apiKey = "YOUR_CLIENT_API_KEY")
+        viewModel.initClient(baseUrl = "http://localhost:8080/v1/", apiKey = "YOUR_CLIENT_API_KEY")
         bookmarksViewModel.initClient(client)
         bookmarksViewModel.refresh()
         viewModel.loadFeed()
     }
 
     private fun loadMoreIfNeeded() {
-        // Only load more if we have data, not already loading, and more pages exist
         if (viewModel.posts.value?.isNotEmpty() == true &&
             viewModel.isLoading.value != true &&
             viewModel.hasMore.value != false) {
