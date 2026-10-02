@@ -1,0 +1,49 @@
+# ---- Gradle / Android ----
+.gradle/
+build/
+app/build/
+sdk/build/
+.kotlin/
+captures/
+
+# Local SDK path (machine-specific, contains your username)
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+.DS_Store
+
+# Android profiling / signing (never commit keys)
+*.hprof
+*.jks
+*.p12
+*.keystore
+keystore.properties
+
+# ---- Node (mock backend) ----
+mock/node_modules/
+*.log
+npm-debug.log*
+.npm/
+
+# Keep mock/package-lock.json committed for reproducible installs
+
+# ---- Secrets / env (backend PROVIDER_TOKEN, API keys, JWT secrets) ----
+.env
+.env.*
+!.env.example
+*.pem
+google-services.json
+
+# ---- OS / Windows ----
+Thumbs.db
+Desktop.ini
+nul
+*.orig
+*~
+
+# ---- Agent working state ----
+.omo/
