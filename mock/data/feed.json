@@ -1,58 +1,782 @@
 {
   "items": [
     {
-      "id": "11111111-1111-4111-8111-111111111111",
-      "instagram_post_id": "17901234567890123",
-      "shortcode": "CvXyZ_AbC",
-      "channel_id": "realtor_xyz",
-      "original_url": "https://www.instagram.com/p/CvXyZ_AbC/",
-      "caption": "Open plot for sale near Lakeview. Price: ₹25L per cent. Contact: 99999...",
+      "id": "3994122313322584465",
+      "instagram_post_id": "3994122313322584465",
+      "shortcode": "Ddt-RULDdmR",
+      "channel_id": "realestate",
+      "original_url": "https://www.instagram.com/p/Ddt-RULDdmR/",
+      "caption": "Rental scams cost renters millions every year — and the listings look more convincing than ever.\n\nAnchor stat: A request for gift-card or crypto payment is one of the clearest scam signals in rental fraud — no legitimate landlord asks for that.\n\nHave you ever spotted a rental scam? Comment your red flag story below and save this before your next apartment search.\n\n#realestate #rentalscam #renterslife #apartmenthunting #scamalert #realestatetips #rentaltips #housingmarket\n#realestateeducation #firsttimerenter #onlinesafety #rentersguide #apartmentliving #fraudalert #tenanttips",
       "media": [
-        { "url": "https://picsum.photos/seed/lakeview-plot/1080/1080", "type": "image", "width": 1080, "height": 1080 }
+        {
+          "url": "https://scontent-fra3-2.cdninstagram.com/v/t39.30808-6/799143010_1546877780787201_6878138815679555822_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=Mzk5NDEyMjMxMzMyMjU4NDQ2NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA5Mi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=C-70iQfJEmgQ7kNvwEUYmnX&_nc_oc=AdrOSWCTM6alOqrRprfa6QYYryc-8drTzXdYi94s4KRON5LCrpRvgaj6hPaU89JtBrU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&_nc_gid=ID7kSjVSAwnRANsmjWulKw&_nc_ss=7a22e&oh=00_AQOGHtwWAreyci0vhPtWwGUCvNLY2qv5Zdbvp1v5njsXMA&oe=6AC5D069",
+          "type": "image",
+          "width": 1365,
+          "height": 1092
+        }
       ],
       "media_type": "image",
-      "timestamp": "2026-08-18T09:30:00Z",
-      "likes_count": 320,
-      "comments_count": 12,
+      "timestamp": "2026-09-25T17:15:05.000Z",
+      "likes_count": 76,
+      "comments_count": 3,
       "extracted": {
         "property_type": "plots",
-        "price": { "raw": "₹25L per cent", "value": 2500000, "currency": "INR" },
-        "location": "Lakeview",
-        "area": "200 sq yards"
+        "price": null,
+        "location": null,
+        "area": null
       },
-      "source": "mock",
-      "raw_payload": {},
-      "created_at": "2026-08-18T09:31:00Z",
-      "updated_at": "2026-08-18T09:31:00Z",
+      "source": "apify",
+      "created_at": "2026-10-02T17:30:45.752Z",
+      "updated_at": "2026-10-02T17:30:45.753Z",
       "is_removed": false
     },
     {
-      "id": "22222222-2222-4222-8222-222222222222",
-      "instagram_post_id": "17909876543210987",
-      "shortcode": "DqAbC_DeF",
-      "channel_id": "apartment_abc",
-      "original_url": "https://www.instagram.com/p/DqAbC_DeF/",
-      "caption": "Spacious 2BHK flat available near Downtown. Price: ₹75L. Contact: 88888...",
+      "id": "3993390493828045275",
+      "instagram_post_id": "3993390493828045275",
+      "shortcode": "DdrX38KCtnb",
+      "channel_id": "realestate",
+      "original_url": "https://www.instagram.com/p/DdrX38KCtnb/",
+      "caption": "Your mortgage has a 30-year schedule. It doesn't mean you have to follow it exactly.\n\nAnchor stat: One extra mortgage payment a year (via bi-weekly payments) can shave years off a 30-year loan and save thousands in interest.\n\nWhich equity-building move are you using? Comment below and save this for your next payment strategy.\n\n#realestate #homeequity #homeownertips #personalfinance #mortgagetips #realestatetips #housingmarket\n#financialliteracy #wealthbuilding #homeownership #realestateeducation #payoffyourmortgage #moneytips\n#realestate2026 #financialfreedom",
       "media": [
-        { "url": "https://picsum.photos/seed/downtown-2bhk/800/600", "type": "image", "width": 800, "height": 600 }
+        {
+          "url": "https://instagram.fumu1-1.fna.fbcdn.net/v/t39.30808-6/798786808_1546876237454022_2312112529965609244_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ig_cache_key=Mzk5MzM5MDQ5MzgyODA0NTI3NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=yNfJPAUwtAwQ7kNvwE8b0Uj&_nc_oc=Adp1Vl8fC8vLLEdAJ3hqkjgXvYK8vPuEAugUfsLphc5wm2x00laf5c0RwXhhDJfxDig&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fumu1-1.fna&_nc_gid=RHuyW14-rbswBmeAOvRo9w&_nc_ss=7a22e&oh=00_AQM8rlLpaQU3UM1KPnmbNMXRpBj2jA88aNYIrnMdJJG6Yw&oe=6AC5AD17",
+          "type": "image",
+          "width": 1402,
+          "height": 1122
+        }
       ],
       "media_type": "image",
-      "timestamp": "2026-08-19T11:00:00Z",
-      "likes_count": 120,
-      "comments_count": 8,
+      "timestamp": "2026-09-24T17:01:07.000Z",
+      "likes_count": 252,
+      "comments_count": 4,
+      "extracted": {
+        "property_type": "property",
+        "price": null,
+        "location": "interest",
+        "area": null
+      },
+      "source": "apify",
+      "created_at": "2026-10-02T17:30:45.753Z",
+      "updated_at": "2026-10-02T17:30:45.753Z",
+      "is_removed": false
+    },
+    {
+      "id": "3991821656670385106",
+      "instagram_post_id": "3991821656670385106",
+      "shortcode": "DdlzKWsjLPS",
+      "channel_id": "realestate",
+      "original_url": "https://www.instagram.com/p/DdlzKWsjLPS/",
+      "caption": "🏠 A condo can look affordable in the listing—and much less affordable once the bills arrive.\n\nMarketWatch reports that rising HOA fees, special assessments and insurance challenges are making some condos harder to sell.\n\nBuyers are weighing more than the mortgage:\n\n💸 Recurring association fees add to monthly expenses.\n🔧 Special assessments can bring substantial additional bills.\n🛡️ Insurance problems can complicate financing and narrow the buyer pool.\n\nFor sellers, reducing the asking price may not fully overcome those concerns. For buyers, the building’s finances matter alongside the unit’s condition.\n\nThis isn’t the same story in every condo market—but it explains why a seemingly attractive price deserves a closer look.\n\nWould you accept higher HOA fees for a lower purchase price?\n\n#RealEstate #CondoLiving #HOA #HousingMarket #HomeBuying #CondoMarket #Homeownership #PropertyInsurance #RealEstateNews #HousingCosts",
+      "media": [
+        {
+          "url": "https://scontent-cdg4-1.cdninstagram.com/v/t39.30808-6/819012157_1560627239412255_2412272884525457104_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzk5MTgyMTY1NjY3MDM4NTEwNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=BX-qJcQZp5cQ7kNvwH2gL0B&_nc_oc=Adp6To_kR9GHJ1nC-A7dGQmCHQfgbKRnenE-ZtJyM0VUM5VWf84wKEb1w9sUgiKiOSFXYS9ygYBrsQgQx7aaz9Sg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_gid=wJXEtdXeHu8mJfUQqh_g1Q&_nc_ss=7a22e&oh=00_AQOqLT43dMJ7n3vdAoUneaPdEhUbmOCM1huiymOeuBt4Og&oe=6AC5CB24",
+          "type": "image",
+          "width": 1350,
+          "height": 1080
+        }
+      ],
+      "media_type": "image",
+      "timestamp": "2026-09-22T13:04:05.000Z",
+      "likes_count": 69,
+      "comments_count": 2,
+      "extracted": {
+        "property_type": "property",
+        "price": {
+          "raw": "rs,",
+          "value": null,
+          "currency": "INR"
+        },
+        "location": "rising HOA fees",
+        "area": null
+      },
+      "source": "apify",
+      "created_at": "2026-10-02T17:30:45.754Z",
+      "updated_at": "2026-10-02T17:30:45.754Z",
+      "is_removed": false
+    },
+    {
+      "id": "3991880074265443887",
+      "instagram_post_id": "3991880074265443887",
+      "shortcode": "DdmAccUjT4v",
+      "channel_id": "realestate",
+      "original_url": "https://www.instagram.com/p/DdmAccUjT4v/",
+      "caption": "🏢 America’s apartment owners are facing a massive refinancing test.\n\nRoughly $757 billion in apartment loans mature through 2028, according to Mortgage Bankers Association figures reported by The Wall Street Journal.\n\nWhen those loans come due, owners generally need to repay, refinance or negotiate an extension. Higher borrowing costs can make that harder—even if a building remains occupied.\n\n📈 More expensive financing can squeeze cash flow.\n🏘️ Owners may need additional capital or consider selling.\n⚠️ A loan reaching maturity does not automatically mean foreclosure.\n\nThe key question is whether the property’s income can support its next loan.\n\nWould you see this as an opportunity to buy—or a reason to wait?\n\n#RealEstate #Multifamily #ApartmentInvesting #CommercialRealEstate #HousingMarket #RealEstateInvesting #RentalHousing #PropertyMarket #RealEstateNews #MortgageDebt",
+      "media": [
+        {
+          "url": "https://instagram.fmad8-1.fna.fbcdn.net/v/t39.30808-6/818865576_1560626889412290_587441799407858814_n.jpg?stp=cp6_dst-jpg_e35_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ig_cache_key=Mzk5MTg4MDA3NDI2NTQ0Mzg4Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=oJva2Vxu1zgQ7kNvwEUIQcH&_nc_oc=Adqb9ksEe9WMAoQwyDQAA7Xa8cNuvAoOTFz48dl3Gh6CoZZVlA_X6sH2z45F6I9j1Uk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmad8-1.fna&_nc_gid=LT16Ef0IBiRWxqnBcbdyfA&_nc_ss=7a22e&oh=00_AQNQeKmqiJJrbyhHuwHQ8HbQxF7-KoT8K1hMR74XtyRaNg&oe=6AC5A5F3",
+          "type": "image",
+          "width": 1350,
+          "height": 1080
+        }
+      ],
+      "media_type": "image",
+      "timestamp": "2026-09-22T15:00:10.000Z",
+      "likes_count": 137,
+      "comments_count": 2,
       "extracted": {
         "property_type": "flats",
-        "price": { "raw": "₹75L", "value": 7500000, "currency": "INR" },
-        "location": "Downtown",
-        "area": "900 sq ft"
+        "price": {
+          "raw": "$757",
+          "value": 757,
+          "currency": "USD"
+        },
+        "location": null,
+        "area": null
       },
-      "source": "mock",
-      "raw_payload": {},
-      "created_at": "2026-08-19T11:01:00Z",
-      "updated_at": "2026-08-19T11:01:00Z",
+      "source": "apify",
+      "created_at": "2026-10-02T17:30:45.754Z",
+      "updated_at": "2026-10-02T17:30:45.754Z",
+      "is_removed": false
+    },
+    {
+      "id": "3624388520706630584",
+      "instagram_post_id": "3624388520706630584",
+      "shortcode": "DJMaigguOO4",
+      "channel_id": "realestate",
+      "original_url": "https://www.instagram.com/p/DJMaigguOO4/",
+      "caption": "🛍️ Ralph Lauren just dropped $132 MILLION to secure its iconic SoHo flagship — beating out LVMH and keeping Tiffany out of the neighborhood. Power move or passion buy? 💸👔 #SoHoStyle #luxuryretail \n\nRalph Lauren has secured its longtime SoHo flagship at 109 Prince Street for $132 million, winning a bidding war against LVMH and preserving its presence in the luxury retail hub.\n\n#RalphLauren #SoHoNYC #RetailRealEstate #LVMH #TiffanyAndCo #LuxuryFashion\n#RealEstateNews #FlagshipStore #CommercialRealEstate #PrinceStreet",
+      "media": [
+        {
+          "url": "https://instagram.fmad19-2.fna.fbcdn.net/v/t39.30808-6/494125360_1128154079326242_2400003510617416497_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ig_cache_key=MzYyNDM4ODUyMDcwNjYzMDU4NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=MmpNRzRy5SsQ7kNvwGMjtU1&_nc_oc=Adqcv2XYu7MzWpJdMjiT4RTBhcTZMUO5ZNpd81bXGJqGPHM3OnhuyRh8B4poTv5oWsY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmad19-2.fna&_nc_gid=X1zSORGBPojqx7F89lMFYg&_nc_ss=7a22e&oh=00_AQNMLDsYvR2NcJs67f5T4ZDiH-Yy6X3VD2DeZinaSIEH2Q&oe=6AC5D63E",
+          "type": "image",
+          "width": 1350,
+          "height": 1080
+        }
+      ],
+      "media_type": "image",
+      "timestamp": "2025-05-03T14:00:02.000Z",
+      "likes_count": 12289,
+      "comments_count": 196,
+      "extracted": {
+        "property_type": "commercial",
+        "price": {
+          "raw": "$132 MILLION",
+          "value": 132000000,
+          "currency": "USD"
+        },
+        "location": "the luxury retail hub",
+        "area": null
+      },
+      "source": "apify",
+      "created_at": "2026-10-02T17:30:45.754Z",
+      "updated_at": "2026-10-02T17:30:45.754Z",
+      "is_removed": false
+    },
+    {
+      "id": "3992665258728426250",
+      "instagram_post_id": "3992665258728426250",
+      "shortcode": "Ddoy-YVjQsK",
+      "channel_id": "realestate",
+      "original_url": "https://www.instagram.com/p/Ddoy-YVjQsK/",
+      "caption": "HOA dues aren't the scary part — the surprise special assessment bill is.\n\nAnchor stat: Special assessments for major repairs like roofs or roads can run into the thousands per household, all at once.\n\nHave you ever been hit with a surprise HOA bill? Comment below and save this before you buy in a community.\n\n#realestate #HOA #homebuyingtips #firsttimehomebuyer #realestatetips #housingmarket #realestateeducation\n#condoliving #townhomeliving #homeownership #propertytips #buyingahouse #realestate2026 #communityliving\n#homeowner",
+      "media": [
+        {
+          "url": "https://scontent-mxp1-1.cdninstagram.com/v/t39.30808-6/798825892_1546874934120819_7777004043554772690_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzk5MjY2NTI1ODcyODQyNjI1MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=YaW_zTEaIHcQ7kNvwGSgq_9&_nc_oc=AdoFelCPyxlrn2YyaoSNFLK7EtgAgvqUiRkpN_AxQjvnKv0VENW6kEhJAIv0MmxIsxI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mxp1-1.cdninstagram.com&_nc_gid=vRMCnZJYiw2MCcGzPjq_UA&_nc_ss=7a22e&oh=00_AQNny4d5zx9jVgdLphWW8Kdceg_7wqSeN5mcls2aJDkOgQ&oe=6AC5A736",
+          "type": "image",
+          "width": 1402,
+          "height": 1122
+        }
+      ],
+      "media_type": "image",
+      "timestamp": "2026-09-23T17:00:11.000Z",
+      "likes_count": 252,
+      "comments_count": 5,
+      "extracted": {
+        "property_type": "villas",
+        "price": null,
+        "location": "once",
+        "area": null
+      },
+      "source": "apify",
+      "created_at": "2026-10-02T17:30:45.754Z",
+      "updated_at": "2026-10-02T17:30:45.754Z",
+      "is_removed": false
+    },
+    {
+      "id": "3992003859148874827",
+      "instagram_post_id": "3992003859148874827",
+      "shortcode": "Ddmclv-jqRL",
+      "channel_id": "realestate",
+      "original_url": "https://www.instagram.com/p/Ddmclv-jqRL/",
+      "caption": "💰 Nearly $300 million in community-lending grants is at the center of a legal fight—with a September 30 deadline approaching.\n\nA group representing community lenders sued the Treasury Department on September 21, arguing that funding could expire before being distributed.\n\nWhy does this matter for real estate?\n\n🏘️ These lenders help finance affordable housing.\n🏪 They also support small businesses and other community projects.\n🏦 They serve borrowers and projects that may struggle to obtain conventional financing.\n\nThe money isn’t exclusively for housing. But delays can create uncertainty for organizations that help fund it.\n\nThe lawsuit seeks to preserve and release the grants; it does not mean a court has ordered payment.\n\nShould funding for these projects be protected from government delays?\n\n#RealEstate #AffordableHousing #CommunityDevelopment #HousingFinance #HousingPolicy #CDFI #RealEstateNews #CommunityInvestment #HousingDevelopment #USHousing",
+      "media": [
+        {
+          "url": "https://scontent-nrt6-1.cdninstagram.com/v/t39.30808-6/820005666_1560627839412195_543031888180160695_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=Mzk5MjAwMzg1OTE0ODg3NDgyNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=s3IXQ0f_RmIQ7kNvwGR1HRn&_nc_oc=Adr-_nNqwqz31G1gR38ju90gMKfsbrNfBLoDB6OVdU1pG96zPLI9CndaLxUzgVksCmMu9Jf7lzmks1hzSpwnovjS&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-nrt6-1.cdninstagram.com&_nc_gid=v-EuBZJ2kfT9a447pEK9HA&_nc_ss=7a22e&oh=00_AQNl6-KP375jNeDwM5lWz6slx3X-WzpCp5EksbgKJVeYXA&oe=6AC5BDE9",
+          "type": "image",
+          "width": 1350,
+          "height": 1080
+        }
+      ],
+      "media_type": "image",
+      "timestamp": "2026-09-22T19:06:06.000Z",
+      "likes_count": 20,
+      "comments_count": 0,
+      "extracted": {
+        "property_type": "property",
+        "price": {
+          "raw": "$300 million",
+          "value": 300000000,
+          "currency": "USD"
+        },
+        "location": null,
+        "area": null
+      },
+      "source": "apify",
+      "created_at": "2026-10-02T17:30:45.754Z",
+      "updated_at": "2026-10-02T17:30:45.754Z",
+      "is_removed": false
+    },
+    {
+      "id": "3648381650434432664",
+      "instagram_post_id": "3648381650434432664",
+      "shortcode": "DKhp8f3Mp6Y",
+      "channel_id": "realestate",
+      "original_url": "https://www.instagram.com/p/DKhp8f3Mp6Y/",
+      "caption": "📉 Mortgage Relief in Sight? Fannie Mae Thinks So 🏡\n\nAfter months of uncertainty, Fannie Mae just updated its forecast—and buyers might finally catch a break.\n\n🔮 Rates could dip below 6% by 2026\n📊 May 2025 forecast:\n• 6.1% by end of 2025\n• 5.8% by end of 2026\n\n🏠 Buyer sentiment is finally bouncing back, and rising inventory is giving shoppers more negotiating power.\n💸 Redfin predicts home prices will drop 1% by Q4 — a shift toward the strongest buyer’s market since 2013.\n\n📈 Fannie Mae also raised its 2025 home sales forecast to 4.92M — signaling a possible end to the housing gridlock.\n\nBottom line:\nRates dropping, prices softening, inventory rising. After years of frustration, the door might finally be opening for buyers. 🚪💥\n\n#MortgageRates #HousingMarket #FannieMae #RealEstateUpdate #HomeBuying #InterestRates #BuyersMarket #2025housing \n\nSource: www.thestreet.com",
+      "media": [
+        {
+          "url": "https://scontent-yyz1-1.cdninstagram.com/v/t39.30808-6/501197131_1154738886667761_6860428234507520421_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=MzY0ODM4MTY1MDQzNDQzMjY2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=pGycdUUBk-wQ7kNvwEbb7kZ&_nc_oc=Adq2QXSECuquKY-zarPSoB3-L2kAw2ZH-e3DbMUr9o-8AlFpdo2rqgyGFZ85dcQZX8k&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_gid=dGs8EB9r3eshjp7JvwgoMw&_nc_ss=7a22e&oh=00_AQPyhU32etcoOqlr-i-C429nuvhcHZeXzemADalj2WutHQ&oe=6AC5D212",
+          "type": "image",
+          "width": 1350,
+          "height": 1080
+        }
+      ],
+      "media_type": "image",
+      "timestamp": "2025-06-05T16:30:06.000Z",
+      "likes_count": 10914,
+      "comments_count": 434,
+      "extracted": {
+        "property_type": "commercial",
+        "price": null,
+        "location": null,
+        "area": null
+      },
+      "source": "apify",
+      "created_at": "2026-10-02T17:30:45.754Z",
+      "updated_at": "2026-10-02T17:30:45.754Z",
+      "is_removed": false
+    },
+    {
+      "id": "3991959040603674012",
+      "instagram_post_id": "3991959040603674012",
+      "shortcode": "DdmSZjdF1Wc",
+      "channel_id": "realestate",
+      "original_url": "https://www.instagram.com/p/DdmSZjdF1Wc/",
+      "caption": "Selling without an agent can save you commission — or cost you way more than commission ever would.\n\nAnchor stat: Homes without MLS exposure are seen by dramatically fewer buyers, which often means a lower final sale price.\n\nHave you ever sold FSBO? Comment how it went — save this before you try it yourself.\n\n#realestate #FSBO #sellingahouse #homeselling #realestatetips #housingmarket #realestateeducation\n#realestateagent #realtor #homesellertips #realestatemarketing #sellyourhome #realestate2026 #propertyvalue\n#dealmaking",
+      "media": [
+        {
+          "url": "https://scontent-ssn1-1.cdninstagram.com/v/t39.30808-6/798984894_1546873107454335_6712715533783961831_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzk5MTk1OTA0MDYwMzY3NDAxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA5Mi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=SrpnHrGEp1wQ7kNvwHxnNso&_nc_oc=Adp83Ck0LXKQdRrUUj3s6FBhWlFXSLCxEveaEcGlhkmzpi0Xm7OBGBV0TNind3zlFlxc-cs7IV9CdrSwvVmLoOiZ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_gid=k3q_ZVnn1_fkOmoGoHJwBg&_nc_ss=7a22e&oh=00_AQNznY1acXNt4GlM18mOuQmE6vSTP_dcdMXCjMdGz17Phw&oe=6AC5D027",
+          "type": "image",
+          "width": 1365,
+          "height": 1092
+        }
+      ],
+      "media_type": "image",
+      "timestamp": "2026-09-22T17:37:03.000Z",
+      "likes_count": 146,
+      "comments_count": 5,
+      "extracted": {
+        "property_type": "villas",
+        "price": {
+          "raw": "rs,",
+          "value": null,
+          "currency": "INR"
+        },
+        "location": null,
+        "area": null
+      },
+      "source": "apify",
+      "created_at": "2026-10-02T17:30:45.754Z",
+      "updated_at": "2026-10-02T17:30:45.754Z",
+      "is_removed": false
+    },
+    {
+      "id": "3551226841781533964",
+      "instagram_post_id": "3551226841781533964",
+      "shortcode": "DFIff9VOH0M",
+      "channel_id": "realestate",
+      "original_url": "https://www.instagram.com/p/DFIff9VOH0M/",
+      "caption": "Barron Trump’s Bold Move into Luxury Real Estate 🏢\n\nAt just 18, Barron Trump is making waves in the luxury real estate market with his new venture, Trump, Fulcher & Roxburgh Capital Inc. 🚀\n\nThe company is set to focus on upscale properties and golf courses in prime locations such as Utah, Arizona, and Idaho, bringing a fresh vision to the high-end market. With a legacy of real estate excellence behind him, Barron’s ambitious plans aim to redefine luxury living.\n\nWith the Trump name synonymous with luxury and grandeur, will Barron’s venture redefine the next generation of real estate? 🤔\n\nDrop your thoughts below! ⬇️\n\n#RealEstate #LuxuryRealEstate #BarronTrump #TrumpOrganization #LuxuryLiving #MansionLife #InvestmentProperties #GolfCourseHomes #trump #PropertyDevelopment #HighNetWorth #DreamHomes #RealEstateInvesting #MillionDollarListings #LuxuryLifestyle #RealEstateNews #UltraLuxury #EliteLiving #GolfResorts #UtahRealEstate #ArizonaRealEstate #IdahoRealEstate #LuxuryMarket",
+      "media": [
+        {
+          "url": "https://instagram.fbri5-1.fna.fbcdn.net/v/t51.75761-15/474611217_18479056285001992_783200032028382607_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ig_cache_key=MzU1MTIyNjgzNDQyNDg1MDMwMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Flhtu0wDecUQ7kNvwExeQu4&_nc_oc=AdpPk-GRfbC53IkMEVXVMzwfo4OGccbbAp9y6Ay4BYgaxsaGKgdSC1g1M_IYKJyQ95Y&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbri5-1.fna&_nc_gid=1xdxAlLgynNgq-g8XanZqA&_nc_ss=7a22e&oh=00_AQOYnv5Q9WPc002fz73jdZ6NHsTGIiE6KFm57fxrOxUDbA&oe=6AC5A808",
+          "type": "image",
+          "width": 1346,
+          "height": 1080
+        },
+        {
+          "url": "https://instagram.fbri5-1.fna.fbcdn.net/v/t51.75761-15/474609911_18479056294001992_8369039672199301472_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ig_cache_key=MzU1MTIyNjgzNDQzMzEzODQxNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=rj0XBd3M5awQ7kNvwFIGTHF&_nc_oc=AdoJg6mBVOGlP9Wvr-eTryn6vALaHhD79LfL-FU8YTuJ-Xnpc-RP9ubFy_W7-bC0rlU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbri5-1.fna&_nc_gid=1xdxAlLgynNgq-g8XanZqA&_nc_ss=7a22e&oh=00_AQOFJAyaK7_I2V_KQJHGSLaONkzm2herRbT7pO3nkQBCOg&oe=6AC5BAE2",
+          "type": "image"
+        }
+      ],
+      "media_type": "image",
+      "timestamp": "2025-01-22T15:20:50.000Z",
+      "likes_count": 17122,
+      "comments_count": 421,
+      "extracted": {
+        "property_type": "property",
+        "price": null,
+        "location": "just 18",
+        "area": null
+      },
+      "source": "apify",
+      "created_at": "2026-10-02T17:30:45.754Z",
+      "updated_at": "2026-10-02T17:30:45.754Z",
+      "is_removed": false
+    },
+    {
+      "id": "3998375514100694440",
+      "instagram_post_id": "3998375514100694440",
+      "shortcode": "Dd9FViEl32o",
+      "channel_id": "realtordotcom",
+      "original_url": "https://www.instagram.com/p/Dd9FViEl32o/",
+      "caption": "Maison Espoir, an 1890s brownstone in Jersey City's Bergen Hill, just listed for $1.2 million after a multiyear restoration by designer Hope Misterek. The five-bedroom home preserves original millwork, flooring, and pocket doors, alongside custom touches like a 27-color guest room and a wrought-iron fence salvaged from a Brooklyn brownstone.\n\nTap the link in our bio to see the full listing.",
+      "media": [
+        {
+          "url": "https://scontent-muc2-1.cdninstagram.com/v/t51.82787-15/825350306_18640662241018848_2907473138827445738_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzk5ODM3NTQ1Njg0ODQzMjEyOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=tUtg3M0OxrQQ7kNvwF2ao83&_nc_oc=AdoJjwk6kqynx6OoKJg3cddwVyDEhKhIJWKoQEa8nWCoXD_pkeYMMZyonyfTYlSafy2yjYcds89KuEnj1Pe7yrKn&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-muc2-1.cdninstagram.com&_nc_gid=_rY8mmdfubJfx_i5zcmeDg&_nc_ss=7a22e&oh=00_AQNJBt4AHSGuhWGfwqX9w4MeY3BXifJB0QyHXdPNC9x6Pg&oe=6AC5CEAA",
+          "type": "image",
+          "width": 1350,
+          "height": 1080
+        },
+        {
+          "url": "https://scontent-muc2-1.cdninstagram.com/v/t51.82787-15/825320867_18640662226018848_2803329467491189064_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=Mzk5ODM3NTQ1NTI2Mjk4NTE5Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=lV0KAn75Ep8Q7kNvwH96h07&_nc_oc=AdooBZjF0C6DXRBB8d_gBlwazEKj7_pfewNv8frp5mvDpFczPvpovFG75FsXAbyW4XrZ0B3_XDKLgviODOvu4nco&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-muc2-1.cdninstagram.com&_nc_gid=_rY8mmdfubJfx_i5zcmeDg&_nc_ss=7a22e&oh=00_AQPmmSShMLtGiggTt1-Tl729zuszl5Z_-HSvCTD7dqP17g&oe=6AC5C94D",
+          "type": "image"
+        },
+        {
+          "url": "https://scontent-muc2-1.cdninstagram.com/v/t51.82787-15/830027347_18640662208018848_9093238927431037465_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzk5ODM3NTQ1NTc0MTE1NTcwOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=jj40JmJD2GMQ7kNvwFyJw-q&_nc_oc=Adq3b4EEkutxZXVYO3RFJlN4YeuKYaa4xxTg5e1qc_OGeIceT_s6a7eZxguG64t0t6TApOx-LDihbdc0suo7Y3d1&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-muc2-1.cdninstagram.com&_nc_gid=_rY8mmdfubJfx_i5zcmeDg&_nc_ss=7a22e&oh=00_AQPkKyHuwG2ykJVZdhy-FlTNPDWa_ecYOwiYL3yCtIrQRw&oe=6AC5BE12",
+          "type": "image"
+        },
+        {
+          "url": "https://scontent-muc2-1.cdninstagram.com/v/t51.82787-15/829602306_18640662217018848_4699184447308567648_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzk5ODM3NTQ1Njk0OTEzMzczNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=A7uVIDdE1wYQ7kNvwEk7IwT&_nc_oc=Adq1O7WgF1XoF5y_0Bm2GzSKqh0AUOWDtJFqJl32I8UxiQRUYCA5LEAL4hIQVXfyuoUSxawvtuHTkz_B-3jEAXgA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-muc2-1.cdninstagram.com&_nc_gid=_rY8mmdfubJfx_i5zcmeDg&_nc_ss=7a22e&oh=00_AQMx71xI-WjuVEB03OWNgIQYs8Feeeszj56ziCpwvRDlRg&oe=6AC5AF08",
+          "type": "image"
+        }
+      ],
+      "media_type": "image",
+      "timestamp": "2026-10-01T16:00:01.000Z",
+      "likes_count": 38,
+      "comments_count": 0,
+      "extracted": {
+        "property_type": "property",
+        "price": {
+          "raw": "$1.2 million",
+          "value": 1200000,
+          "currency": "USD"
+        },
+        "location": null,
+        "area": null
+      },
+      "source": "apify",
+      "created_at": "2026-10-02T17:30:45.754Z",
+      "updated_at": "2026-10-02T17:30:45.754Z",
+      "is_removed": false
+    },
+    {
+      "id": "3997796711204849577",
+      "instagram_post_id": "3997796711204849577",
+      "shortcode": "Dd7Bu13lwep",
+      "channel_id": "realtordotcom",
+      "original_url": "https://www.instagram.com/p/Dd7Bu13lwep/",
+      "caption": "This 1,850-acre Virginia estate, once owned by LVMH chairman Bernard Arnault, just listed for $35 million — complete with a turnkey winery, an 1810 manor house, and 2.5 miles of river frontage.\n\nTap the link in our bio to see the full listing.",
+      "media": [
+        {
+          "url": "https://scontent-cdg4-2.cdninstagram.com/v/t51.82787-15/827745979_18640401118018848_1296072402695774860_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzk5Nzc5NjY0NTUzODg1MzM5Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=R20GZfngamcQ7kNvwEKa0cs&_nc_oc=Adp-RJplUsKXzyYh7Ffpq63pse2DMN3XNAAwHWWv-Cm0-hHyMQXf2ZaWp1QXg1fr5aFhTw2t_DIIKaj3POJnfAn9&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_gid=mI6cjrNx_hn8OvLdwpCGlw&_nc_ss=7a22e&oh=00_AQNdAz1wVJnaM-hCOTarNgybUvUTN18ebcY0yuAyWLMtHQ&oe=6AC5D49D",
+          "type": "image",
+          "width": 1350,
+          "height": 1080
+        },
+        {
+          "url": "https://scontent-cdg4-3.cdninstagram.com/v/t51.82787-15/825320940_18640401109018848_5215157667737518829_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=Mzk5Nzc5NjY0NDkzNDg5NDU5NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Hb1PHfUfe2YQ7kNvwHLlbGi&_nc_oc=AdpU_g0WDnclK7X4TwTTbIe3FTW1L6RtPfX6kGZRRamUpmORJCGuq-DRWuLewOVLDDZHbmJuMEymyxtvNVHdDtcI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_gid=mI6cjrNx_hn8OvLdwpCGlw&_nc_ss=7a22e&oh=00_AQP-ZH54FScp8ZG_YItob-RFKX7QruPcU0YQ8rDkK5yG9Q&oe=6AC5B189",
+          "type": "image"
+        },
+        {
+          "url": "https://scontent-cdg4-2.cdninstagram.com/v/t51.82787-15/828332971_18640401133018848_610621283476838526_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzk5Nzc5NjY0NzMzNDAxNjQ5MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=b1RazfqgaYoQ7kNvwEjV9Vh&_nc_oc=AdrfWL4rizulNJlQuwwohxMx7bDaynevXmJ3Thy06bahj4l3-Pq--dzl1QtmLZXGYWvj3Etw-hEAxIQCkKWeY7zl&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_gid=mI6cjrNx_hn8OvLdwpCGlw&_nc_ss=7a22e&oh=00_AQOGTbc69y5A0HYy97OHxWILyGUa5kaO75ejcMKjFm8pXw&oe=6AC5CD6D",
+          "type": "image"
+        },
+        {
+          "url": "https://scontent-cdg4-1.cdninstagram.com/v/t51.82787-15/828051530_18640401100018848_3001552271645606739_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzk5Nzc5NjY0MzIxNTIxODQwMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=rETzPtlnUM0Q7kNvwG4yQnL&_nc_oc=AdqwJjvRFBXylhKHX8xTGs74WyfvuuMq4xZezIxOcanTFSVqnZh4KFL59VEqOBYpjrGAoLabgYIZvSi6tz1d_V6o&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_gid=mI6cjrNx_hn8OvLdwpCGlw&_nc_ss=7a22e&oh=00_AQOSJg5Y8zXgcmqOh51KMZcin-qiXKLrBA5KhuGfHAIyvg&oe=6AC5CFA3",
+          "type": "image"
+        }
+      ],
+      "media_type": "image",
+      "timestamp": "2026-09-30T21:00:01.000Z",
+      "likes_count": 128,
+      "comments_count": 1,
+      "extracted": {
+        "property_type": "villas",
+        "price": {
+          "raw": "$35 million",
+          "value": 35000000,
+          "currency": "USD"
+        },
+        "location": null,
+        "area": null
+      },
+      "source": "apify",
+      "created_at": "2026-10-02T17:30:45.754Z",
+      "updated_at": "2026-10-02T17:30:45.754Z",
+      "is_removed": false
+    },
+    {
+      "id": "3997768530783042506",
+      "instagram_post_id": "3997768530783042506",
+      "shortcode": "Dd67UwzjvvK",
+      "channel_id": "realtordotcom",
+      "original_url": "https://www.instagram.com/p/Dd67UwzjvvK/",
+      "caption": "This 5-acre Sedona, AZ, compound was once the creative studio of Cowboy Artists of America co-founder Joe Beeler, now transformed into a $6.95 million luxury estate near Boynton Canyon.\n\nFollow @realtordotcom for more homes like this.",
+      "media": [
+        {
+          "url": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-15/832706120_18640384363018848_5407522376107618946_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=Mzk5Nzc2ODQ1OTgwNzAxODgxOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=wLZ9Rrjfe9QQ7kNvwHtHLN_&_nc_oc=AdrNzLGlgRVp0gW5UjTx4OorvVZclyaNFxdpE_58H3mNlzNR1sMktQ3ckgAnhKRrXkIIzzKdc3h74c_xh87u6-5l&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_gid=1dxbN2hok6rtXLUeJk0rhw&_nc_ss=7a22e&oh=00_AQOLi_z5UVdq__tYxA3gQ7L6Tk99CtOOAD2Zke9jz66MiA&oe=6AC5D1CC",
+          "type": "image",
+          "width": 1350,
+          "height": 1080
+        },
+        {
+          "url": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-15/827343338_18640384327018848_4141509681196748004_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzk5Nzc2ODQ2Mjc3NjU1MDU5OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=mwwoiyb3y98Q7kNvwFKVcRj&_nc_oc=AdooyEfpz_l7MGfpcwiQ8EnbpznNKL1SNV3ZNGnu2mMTlJ9LNxTS2zhxtRpBhxHemLiFWYYdyzMTVt-W5DFbFwcz&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_gid=1dxbN2hok6rtXLUeJk0rhw&_nc_ss=7a22e&oh=00_AQMxxYpr8mbycoMQE20H9cxocXxDT4IwVd40EsbkUqLm3Q&oe=6AC5AA38",
+          "type": "image"
+        },
+        {
+          "url": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-15/830233040_18640384336018848_66674403078883156_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzk5Nzc2ODQ2MjIxNDU0MTU1Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=arRrcxNSffAQ7kNvwEynWps&_nc_oc=AdpDH1JwbfTQaMJI700al59WwdQmnR35H80jzXwAr1cAmhakZmbfpkdbXWz6sIVcAI469vA1eq7fxREtzJXzBeeV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_gid=1dxbN2hok6rtXLUeJk0rhw&_nc_ss=7a22e&oh=00_AQMhYM6YE4EFOALqBfJg4T3WoA2w4zVtq8iT2yPUmjzVYg&oe=6AC5CA91",
+          "type": "image"
+        },
+        {
+          "url": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-15/829492277_18640384333018848_8813141694569118671_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzk5Nzc2ODQ2MDQ0NDU1NTQwOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=H6bJsq3PJbUQ7kNvwGkP5T3&_nc_oc=Ado0YCKNdA7q-K1u2et2kyNLiaxoX4eJAoRYzlarhDtQDrs37VR8tvzqkpW2hcGqubiBa8dQHRdPby9RKhr6AQb1&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_gid=1dxbN2hok6rtXLUeJk0rhw&_nc_ss=7a22e&oh=00_AQOAsuuDLDXq4MkHIVBZO21K8Mtlm002VWLhYcp-DJb7XQ&oe=6AC5BC0E",
+          "type": "image"
+        },
+        {
+          "url": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-15/829687415_18640384360018848_2587173864713959642_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=Mzk5Nzc2ODQ2MDM2MDY1NTE2Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=v1aD599dcIwQ7kNvwH7X19L&_nc_oc=Adq32ZDHuoZBMDsAJlAdCELHGx26CReSO9DUb96iXlBZA3tHgsIromQH892lBS4hOl5SzgOcbGhdbeTEPXlNHVUA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_gid=1dxbN2hok6rtXLUeJk0rhw&_nc_ss=7a22e&oh=00_AQOhgUq-FT4UheEtdW0-qsvk6JCUnQVV9GSlb7UPajnS3g&oe=6AC5A8B6",
+          "type": "image"
+        },
+        {
+          "url": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-15/831400162_18640384330018848_9090086840200929167_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzk5Nzc2ODQ2MDU2MTk2OTMyNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=6ugS7nhMSW0Q7kNvwG0N8Xr&_nc_oc=AdpupiGP-A-AhgCYxyGJQ9EadjTTYScIuNG0fFUyvzWkJQlD2-LcFkRh0pZ1-Ijr8e1m3ctDPWuq-aUqvgVBuoNc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_gid=1dxbN2hok6rtXLUeJk0rhw&_nc_ss=7a22e&oh=00_AQOqtSSCSE2EoM-R5RpC78dsCkMsF0Q0rSZTASdrlpU7Sw&oe=6AC5C763",
+          "type": "image"
+        },
+        {
+          "url": "https://scontent-ber1-1.cdninstagram.com/v/t51.82787-15/825270185_18640384345018848_8588838500322036801_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=Mzk5Nzc2ODQ2MTE0OTE2MjIzOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=sy0EoKkI-z8Q7kNvwHv4F0o&_nc_oc=Adq_NCsBh7ibzB7lzDWUMlZfUtnGG2fih21OoHxtPk4EyXhTQvanOzSw9a_QUf_XwbgsHJaLxikwrTLef9Kd1kPN&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_gid=1dxbN2hok6rtXLUeJk0rhw&_nc_ss=7a22e&oh=00_AQOk6pAqhI_SxmTAgA911H9g_yvpZW_Pr7CdfQQzl6vung&oe=6AC5C03F",
+          "type": "image"
+        }
+      ],
+      "media_type": "image",
+      "timestamp": "2026-09-30T19:00:01.000Z",
+      "likes_count": 99,
+      "comments_count": 5,
+      "extracted": {
+        "property_type": "property",
+        "price": {
+          "raw": "$6.95 million",
+          "value": 6950000,
+          "currency": "USD"
+        },
+        "location": "Boynton Canyon",
+        "area": null
+      },
+      "source": "apify",
+      "created_at": "2026-10-02T17:30:45.754Z",
+      "updated_at": "2026-10-02T17:30:45.754Z",
+      "is_removed": false
+    },
+    {
+      "id": "3998375392364653680",
+      "instagram_post_id": "3998375392364653680",
+      "shortcode": "Dd9FTwsjuxw",
+      "channel_id": "realtordotcom",
+      "original_url": "https://www.instagram.com/p/Dd9FTwsjuxw/",
+      "caption": "This 8,500-foot Idaho cabin, dubbed the state's highest private residence, just got a $50,000 price cut to $625,000. Reaching the two-bedroom home requires a two-hour side-by-side ride up a rock-strewn dirt road. It's being sold fully furnished and used seasonally, running on solar power and a nearby forest spring for water.\n\nTap the link in our bio to see the full listing.",
+      "media": [
+        {
+          "url": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-15/830540320_18640662067018848_3022281776419029271_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=Mzk5ODM3NTMyMzAxNTk5NjA4OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Srhr5SeQfE8Q7kNvwFDBhBZ&_nc_oc=Adqy7XLLL2mEQJjb2zCoklMBka9QtBwCWSRgUuMwT1IPsjKNApxgd-jvY4214cuTiWhpSZQM4hffM1KzVidYV5vc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_gid=3edMeYPC05FANkLUKufvwg&_nc_ss=7a22e&oh=00_AQNUNlfuzKZ1-9e6zWz9ITFTFuQGt1woqrrbVxa87DXbHg&oe=6AC5B308",
+          "type": "image",
+          "width": 1350,
+          "height": 1080
+        },
+        {
+          "url": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-15/828840401_18640662052018848_3406199570678388958_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzk5ODM3NTMyMjIwMjI3ODU4NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=aag7rQw-58QQ7kNvwEymKMg&_nc_oc=AdoUWM1e0cf8trOdeBJaTnyq79XnT7FMZbx3JCuX4dyLipiX3cJdlthZOGNTZp_7M4JfF4fNiSIIbiR_vKvoU417&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_gid=3edMeYPC05FANkLUKufvwg&_nc_ss=7a22e&oh=00_AQN4xu0gaVCvmmo6OVS_xeiPGjfBGrf6mLguQhUwo8zKkg&oe=6AC5C771",
+          "type": "image"
+        },
+        {
+          "url": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-15/827856255_18640662079018848_2469713663145340511_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzk5ODM3NTMyNDQ4NDAxMDcwMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=v0yoBfAz_IkQ7kNvwGWbC0i&_nc_oc=AdpHS5-i_4qpUdN_JWAxOcwFnqwrh5IvxhmJ92w4BrjgCFU6fFit4yJBF_eaDcqDVzMavPJCUSvzuw69GzFIo0JH&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_gid=3edMeYPC05FANkLUKufvwg&_nc_ss=7a22e&oh=00_AQOwHpmyIz9RfC4qHwXo_bOGYQTe3g8-ExIzGkuJSQZJDQ&oe=6AC5BB49",
+          "type": "image"
+        },
+        {
+          "url": "https://scontent-dus1-1.cdninstagram.com/v/t51.82787-15/829092822_18640662037018848_4976903284026846794_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=Mzk5ODM3NTMyMTQzMDU4OTM5NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=bGDLQcUK5ZMQ7kNvwFpvktd&_nc_oc=AdpyVZxFxlezrfbt48n7Nq1416ZiDu985dG5PoWEGmnO5U6ezcqtvcjqagnaahHYYhAo92Wq0m7MiCHvQhKf7Pbq&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_gid=3edMeYPC05FANkLUKufvwg&_nc_ss=7a22e&oh=00_AQPzFcaMcWJK0aGA6DNDLPEIljjoxD4t9OePLsZiOIda7A&oe=6AC5AAAD",
+          "type": "image"
+        }
+      ],
+      "media_type": "image",
+      "timestamp": "2026-10-01T14:05:24.000Z",
+      "likes_count": 144,
+      "comments_count": 0,
+      "extracted": {
+        "property_type": "property",
+        "price": {
+          "raw": "$50,000",
+          "value": 50000,
+          "currency": "USD"
+        },
+        "location": null,
+        "area": null
+      },
+      "source": "apify",
+      "created_at": "2026-10-02T17:30:45.754Z",
+      "updated_at": "2026-10-02T17:30:45.754Z",
+      "is_removed": false
+    },
+    {
+      "id": "3998456057421095084",
+      "instagram_post_id": "3998456057421095084",
+      "shortcode": "Dd9Xpl4l-Cs",
+      "channel_id": "realtordotcom",
+      "original_url": "https://www.instagram.com/p/Dd9Xpl4l-Cs/",
+      "caption": "This 3,361-square-foot home in Lagunitas, CA, designed by architect Jeremy Kotas on a blank 20-acre parcel, just listed for $4.4 million. Kotas, who worked early in his career for Frank Gehry, oriented the home's glass walls and soaring ceilings toward Mount Tamalpais, with landscaping by Bernard Trainor built around native plants and a heated 25-yard lap pool.\n\nTap the link in our bio to see the full listing.",
+      "media": [
+        {
+          "url": "https://instagram.fcdg1-1.fna.fbcdn.net/v/t51.82787-15/830856997_18640712476018848_43835408211118141_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ig_cache_key=Mzk5ODQ1NTk5Njk4OTUyNzYxNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=8vqXZiX_mWYQ7kNvwFOl-rN&_nc_oc=AdprEPy6JNsp9YYA599FgIMQ1-BTJMM6itNTmTJrvUVBRm9lsyCbANWyuv-T_aI-I_BlKfAo-r2xBVXYZU635dO_&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcdg1-1.fna&_nc_gid=Dstf5TLAfL2Ctp4Xg5d1cA&_nc_ss=7a22e&oh=00_AQPFTDYWK0CnzesYwLNn7Ay6QxPLVoqx77QXGAeLybcgfQ&oe=6AC5B47D",
+          "type": "image",
+          "width": 1350,
+          "height": 1080
+        },
+        {
+          "url": "https://instagram.fcdg1-1.fna.fbcdn.net/v/t51.82787-15/828506837_18640712467018848_7336635407398137056_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=Mzk5ODQ1NTk5Njc3OTgxNzgxNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=tNHQ-3Pacz4Q7kNvwHqfQnI&_nc_oc=AdqHpJG_kNdDxS7oBE-qiSZnFy17zXOy1t3gNTax2GXFvKlGGty_n0wHUSpXhBnPmSJMTOK66If_s-IWRZ095ZEo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcdg1-1.fna&_nc_gid=Dstf5TLAfL2Ctp4Xg5d1cA&_nc_ss=7a22e&oh=00_AQMUsPbvaHAOqSWCt9riTTwE-lR06zTnhzalX_4gx1pCCA&oe=6AC5CC22",
+          "type": "image"
+        },
+        {
+          "url": "https://instagram.fcdg1-1.fna.fbcdn.net/v/t51.82787-15/831278879_18640712458018848_5992653642013287983_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ig_cache_key=Mzk5ODQ1NTk5NDk4NDY3ODQ1Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Yk4JbOavTFcQ7kNvwEFL2qB&_nc_oc=AdqiFvOG5jbdXA42ph9clbiSM2j7gyI6zPU2Y2jgh68sY7y_xHzM57CH7-3sNGiSZDbDj6tB4tHcc3_gosB6w35a&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcdg1-1.fna&_nc_gid=Dstf5TLAfL2Ctp4Xg5d1cA&_nc_ss=7a22e&oh=00_AQPi1soAkOd_cTW91o2qlYczNwNpi6xyN8Hvvuy0GsdWsA&oe=6AC5CAB6",
+          "type": "image"
+        },
+        {
+          "url": "https://instagram.fcdg1-1.fna.fbcdn.net/v/t51.82787-15/828493366_18640712488018848_1878960613186728508_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=Mzk5ODQ1NTk5NjkxNDA0OTE4Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=H1BSJUggDogQ7kNvwHEtUzq&_nc_oc=Adrt2yBiRumABgPAzsMS_SD9CRuLyxZ8MRPZ1cEUG1--wVQGb5H2CtgO5DfJYsTDOvMYiH-EnDRPzQP7L9eOVnXh&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcdg1-1.fna&_nc_gid=Dstf5TLAfL2Ctp4Xg5d1cA&_nc_ss=7a22e&oh=00_AQPaUx76SLhMBTdBUi5X9vbJ8MlNu_WNodJbvmwMT8EQFA&oe=6AC5CF01",
+          "type": "image"
+        }
+      ],
+      "media_type": "image",
+      "timestamp": "2026-10-01T20:00:01.000Z",
+      "likes_count": 45,
+      "comments_count": 1,
+      "extracted": {
+        "property_type": "plots",
+        "price": {
+          "raw": "$4.4 million",
+          "value": 4400000,
+          "currency": "USD"
+        },
+        "location": "Lagunitas",
+        "area": null
+      },
+      "source": "apify",
+      "created_at": "2026-10-02T17:30:45.754Z",
+      "updated_at": "2026-10-02T17:30:45.754Z",
+      "is_removed": false
+    },
+    {
+      "id": "3997768906961777083",
+      "instagram_post_id": "3997768906961777083",
+      "shortcode": "Dd67aPJjvG7",
+      "channel_id": "realtordotcom",
+      "original_url": "https://www.instagram.com/p/Dd67aPJjvG7/",
+      "caption": "Jenny McCarthy and Donnie Wahlberg have listed their St. Charles, IL, home for $2.799 million, more than a decade after buying it for $1.1 million in 2015. The couple made the four-bedroom home their own with personal touches like initial-shaped door handles and a custom poker table, alongside a reimagined lower level with a home theater, sauna, and cold plunge.",
+      "media": [
+        {
+          "url": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/827677880_18640384768018848_4336550020024506919_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=Mzk5Nzc2ODgyOTgyMDA4NzQwOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=lCq53AFYayQQ7kNvwHNtynA&_nc_oc=Adq2hJL8VftykcTlTqAqUjTuGyB1MPc7myC8SMa5r18xNEe45tmi68SUDpenl76Fq7c&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=ftyFERcigqDSFMwRtFwMZg&_nc_ss=7a22e&oh=00_AQNRQNDWMy3ZJ9JGtKpmdxX4E8SvCQ6OWjNTc33GIcgoOA&oe=6AC5B2BA",
+          "type": "image",
+          "width": 1350,
+          "height": 1080
+        },
+        {
+          "url": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/825270216_18640384744018848_5007967447651812177_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzk5Nzc2ODgzMDUyNDc0NzE2MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=y24jO9Ik8JEQ7kNvwGxj4LT&_nc_oc=AdoWNMTfRMpAO9Km2sOWJlBFIkp1VNo8T-qOwhbxIub64lX5tnhviaS4GpCJ6bbOmU0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=ftyFERcigqDSFMwRtFwMZg&_nc_ss=7a22e&oh=00_AQOQZlcdvjTCk2wkiIpHMtkftUnStW_EU4gQaRJxmssNeQ&oe=6AC5B16D",
+          "type": "image"
+        },
+        {
+          "url": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/830715480_18640384663018848_3134222124139145530_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzk5Nzc2ODgyNzc3MzMxODkxNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=66Xx9L2usm8Q7kNvwHiuf3t&_nc_oc=Adqsb_GssPAj3ZplD6FQQnSxycSh3NSq4OpDj_CWXxGY1HttJQ36S-N3eaKLSaG4fns&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=ftyFERcigqDSFMwRtFwMZg&_nc_ss=7a22e&oh=00_AQOMV_Sc3s5lHtEplB_1wYgdZpwc0bc40_N1WFjSGkDZnw&oe=6AC5D60C",
+          "type": "image"
+        },
+        {
+          "url": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/829287162_18640384672018848_719785080550026077_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzk5Nzc2ODgyOTA1Njc0MjY4MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Hm1hvhI5awMQ7kNvwFGAgo3&_nc_oc=Adqj22QGfRU3G-6gcdHBq7qxEYENVBm6tUrqyayE-trDO50-a9rv3jq2PJgjjO3v9l8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=ftyFERcigqDSFMwRtFwMZg&_nc_ss=7a22e&oh=00_AQNb0sMnD04M4jU9lQWvV6XG1N3JhDfcN3LeGNzZ8NTeTg&oe=6AC5A62B",
+          "type": "image"
+        },
+        {
+          "url": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/829269109_18640384699018848_5465233376567712842_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzk5Nzc2ODgyOTE5MDkzNzE2OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=iAMi83tTfHUQ7kNvwHMGhXh&_nc_oc=AdpwiFndM2LNsU3Nihio1OY54iSXj6axiz-yqJGzUylZ7WA0C_3KzVviQvEe1oBCJ1c&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=ftyFERcigqDSFMwRtFwMZg&_nc_ss=7a22e&oh=00_AQMD1C6dOP4wNG3BNMTI_-agjzxdYvcePHoxfDLNLgluww&oe=6AC5C131",
+          "type": "image"
+        },
+        {
+          "url": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/825270142_18640384696018848_3388153352173006627_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=Mzk5Nzc2ODgzMDc0Mjg0OTM2OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=wcz0eYloV0QQ7kNvwHE81pD&_nc_oc=Adr7gNyUUa3fI8ubDeHiQS82lUMu2o6XNTK0jZtSfp5g_WEbnTRlEKRYTMqAaEsDrbk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=ftyFERcigqDSFMwRtFwMZg&_nc_ss=7a22e&oh=00_AQPfeFh-TMrneERWSqDS3FpYZn8TW8u6c_mTDm-kjhtl3A&oe=6AC5AACE",
+          "type": "image"
+        },
+        {
+          "url": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/831424367_18640384714018848_8321216898148977192_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=Mzk5Nzc2ODgyODM1MjExMzkyOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=SARC9JRaZ1EQ7kNvwEPrKMi&_nc_oc=Adq1fGdYv8W2ajCYqPrtWe57H1Hc5FXOYT3qqx0USxBN7GyInS8GHFEUsej5CKg8yM0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=ftyFERcigqDSFMwRtFwMZg&_nc_ss=7a22e&oh=00_AQPzaLi--HkY5J3S5f86VN18JPz2cuWGFn8nMVWbVK4_8A&oe=6AC5A49F",
+          "type": "image"
+        },
+        {
+          "url": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/831424265_18640384681018848_1268163410143603359_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzk5Nzc2ODgyODc2MzEyMjgzNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=RlR6wSWQymUQ7kNvwFjT8vl&_nc_oc=AdonGOZo9HddotpYcV4diwG5hYzkjVXR_fN8mYpd_G6wIVkfIhFGE_ktB0w6GKBHSE0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=ftyFERcigqDSFMwRtFwMZg&_nc_ss=7a22e&oh=00_AQOOy9A94UJWMsJ8tHd8fkdcJgrN5xz_yuUfF1dCaRK-Hw&oe=6AC5B597",
+          "type": "image"
+        }
+      ],
+      "media_type": "image",
+      "timestamp": "2026-09-30T18:00:16.000Z",
+      "likes_count": 571,
+      "comments_count": 16,
+      "extracted": {
+        "property_type": "property",
+        "price": {
+          "raw": "$2.799 million",
+          "value": 2799000,
+          "currency": "USD"
+        },
+        "location": null,
+        "area": null
+      },
+      "source": "apify",
+      "created_at": "2026-10-02T17:30:45.754Z",
+      "updated_at": "2026-10-02T17:30:45.754Z",
+      "is_removed": false
+    },
+    {
+      "id": "3997272264425320852",
+      "instagram_post_id": "3997272264425320852",
+      "shortcode": "Dd5KfIvl7GU",
+      "channel_id": "realtordotcom",
+      "original_url": "https://www.instagram.com/p/Dd5KfIvl7GU/",
+      "caption": "The Samuel Eppstein Residence, one of just four homes in Frank Lloyd Wright's only Usonian community, just listed for $2.1 million in Galesburg, MI. Built in 1953 by the Eppsteins themselves, working alongside Wright, the concrete-block home was restored starting in 2016.\n\nTap the link in our bio to see the full listing.",
+      "media": [
+        {
+          "url": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/828676452_18640158172018848_4558725456269428344_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzk5NzI3MjE5ODM3MzQxNTUyNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=ylJ_Whu3QJsQ7kNvwG0bBvq&_nc_oc=Ado7Uc8vk8_RO5TgopnmLWjB1plrXYpvPH4pxdp9Cl236RQYFb8y8PzS8Dsz5hWLgNBCOOOt1OC7KTH0EmFitrmS&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=qmzDpwgJh1r6zyQhASh_uA&_nc_ss=7a22e&oh=00_AQMheGEm-ktnI9MUzg1dTiO7THdtzjYmenSSEuob5JTL8g&oe=6AC5B23D",
+          "type": "image",
+          "width": 1350,
+          "height": 1080
+        },
+        {
+          "url": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/828450840_18640158193018848_6162843100580340732_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=Mzk5NzI3MjE5NjIwOTE0NDk2Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=XL6nuEsgcioQ7kNvwE3PVMo&_nc_oc=Adq0K-Wm_lowEuQloa3RHefbxwSiQELHviF__dOk22TE2N9PVtyxZ8SCmDpMGFN1sCFmNzMDlC4chCeUfYkXDJSK&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=qmzDpwgJh1r6zyQhASh_uA&_nc_ss=7a22e&oh=00_AQN8RZUJnSVQbwtGyENO0_VHoAoINJ4AN-kR0ToMiHHvAg&oe=6AC5B34F",
+          "type": "image"
+        },
+        {
+          "url": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/825320686_18640158160018848_5608515892728732865_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzk5NzI3MjE5Nzg0NDkyMzkyMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=eHDyfBftkU4Q7kNvwHX7fB-&_nc_oc=AdqwoDGWGFcUZIFJ0rtE9wzx0OaWCO1j4vwpGPV6vgAuwnqZJQ3J8tXVAQptkUvYi1h46vHJUdvsj2-USjv1o4ce&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=qmzDpwgJh1r6zyQhASh_uA&_nc_ss=7a22e&oh=00_AQOtTCSiWTWIomCe5gB2QWqZ8oKtoFJV0l66C7fuZZsruQ&oe=6AC5CBC2",
+          "type": "image"
+        },
+        {
+          "url": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/830632113_18640158151018848_8890186679079938691_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=Mzk5NzI3MjE5NjIyNTkyNjM0OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=bWi8xDorXN4Q7kNvwEg7Vji&_nc_oc=Ado8FLLEdODAkW8llMtKSMpX5nY3mN6LZGIBrxMv38DiYTgkB2ocU6zWSuE9vlpaxlzj9M6Jiw8JSZxmgw0t6xBi&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=qmzDpwgJh1r6zyQhASh_uA&_nc_ss=7a22e&oh=00_AQO584hJxwpUbGZCPcw6YhIOf5z502x7kM4zhnK2FvnyCg&oe=6AC5A6BC",
+          "type": "image"
+        },
+        {
+          "url": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/825320618_18640158184018848_6133288614688891859_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzk5NzI3MjE5OTg5MTc3MzAyNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=SoEuyuG2c6QQ7kNvwGmtk_4&_nc_oc=AdpWH60EESymz_k2qcx-NWEY4VSNvXd7mv3lSgdSumgZsQqRH8zcACy0kJRaeacElOeaEbRseln-UAF441XVPmRv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=qmzDpwgJh1r6zyQhASh_uA&_nc_ss=7a22e&oh=00_AQM9262vNCoRm0j-4uvCsUyroq6pneofK91NenbhXWT5Qw&oe=6AC5D328",
+          "type": "image"
+        },
+        {
+          "url": "https://scontent-ams2-1.cdninstagram.com/v/t51.82787-15/825350327_18640158148018848_4415288643254154314_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=Mzk5NzI3MjE5NDcxNjAwNjIxMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=7aQYDfomlr0Q7kNvwFXD5FX&_nc_oc=AdoFZD1_vqwkuddbPeZACX82RKdsWLwdRxkbeme8R3koOy-OcjpDMi4ndGwi2mjnq1N_hTU_pGnUg1fc1I2T4gyw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=qmzDpwgJh1r6zyQhASh_uA&_nc_ss=7a22e&oh=00_AQNFUsUgLBYtO78YkqiON-WZFLZBr80leIFMYU_8UVVn4w&oe=6AC5BC28",
+          "type": "image"
+        }
+      ],
+      "media_type": "image",
+      "timestamp": "2026-09-30T23:00:00.000Z",
+      "likes_count": 229,
+      "comments_count": 4,
+      "extracted": {
+        "property_type": "property",
+        "price": {
+          "raw": "$2.1 million",
+          "value": 2100000,
+          "currency": "USD"
+        },
+        "location": "Residence",
+        "area": null
+      },
+      "source": "apify",
+      "created_at": "2026-10-02T17:30:45.754Z",
+      "updated_at": "2026-10-02T17:30:45.754Z",
+      "is_removed": false
+    },
+    {
+      "id": "3997854061584104365",
+      "instagram_post_id": "3997854061584104365",
+      "shortcode": "Dd7OxZkkrut",
+      "channel_id": "realtordotcom",
+      "original_url": "https://www.instagram.com/p/Dd7OxZkkrut/",
+      "caption": "While higher home prices and interest rates have raised monthly mortgage costs, buyers who put more money down are significantly offsetting the sting. In markets like Hartford, Boston, New York, and Seattle, higher down payments save buyers over $200 per month, whereas smaller down payments in parts of Texas and Arizona are making monthly burdens heavier.",
+      "media": [
+        {
+          "url": "https://instagram.fein1-2.fna.fbcdn.net/v/t51.82787-15/831118389_18640631251018848_3851294591824493995_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ig_cache_key=Mzk5Nzg1NDA2MTU4NDEwNDM2NTE4NjQwNjMxMjQ1MDE4ODQ4.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=P7qJw8i700QQ7kNvwH20wwh&_nc_oc=AdoN7nl2dCAoadEPGU6VuCUT3r2fRpINoJa1qkauK0GJu_vI0y5whi8nLrmWVBCuCR8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fein1-2.fna&_nc_gid=SeMp5w640nOlFgm_BtzgpQ&_nc_ss=7a22e&oh=00_AQPoDGuWGnOZDs7AMtPkzhGqvAWuuSyddrLRN1MCNlRtAg&oe=6AC5B9C6",
+          "type": "video",
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "media_type": "video",
+      "timestamp": "2026-10-01T12:30:02.000Z",
+      "likes_count": 13,
+      "comments_count": 2,
+      "extracted": {
+        "property_type": "property",
+        "price": {
+          "raw": "$200",
+          "value": 200,
+          "currency": "USD"
+        },
+        "location": "markets like Hartford",
+        "area": null
+      },
+      "source": "apify",
+      "created_at": "2026-10-02T17:30:45.754Z",
+      "updated_at": "2026-10-02T17:30:45.754Z",
+      "is_removed": false
+    },
+    {
+      "id": "3871597860186095436",
+      "instagram_post_id": "3871597860186095436",
+      "shortcode": "DW6rb3Bjf9M",
+      "channel_id": "realtordotcom",
+      "original_url": "https://www.instagram.com/p/DW6rb3Bjf9M/",
+      "caption": "The realtor.com Market Clock tracks every market so you know when to make your move.\n\nLearn more at link in bio.",
+      "media": [
+        {
+          "url": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/669791201_18586224400018848_5078061727466048290_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=111&ig_cache_key=Mzg3MTU5Nzg2MDE4NjA5NTQzNjE4NTg2MjI0Mzk0MDE4ODQ4.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fZGVmYXVsdF9jb3Zlcl9mcmFtZS5DMyJ9&_nc_ohc=-BfXML7jN2kQ7kNvwHYvpzN&_nc_oc=AdqndR6oun84YVUx2x8f9UK-WBfnIptka888pw4_oiWDn5weerljP7cVhZdJxSvQU9U&_nc_ad=z-m&_nc_cid=1753&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=beSnvMVbNanA5r7wzbiV1g&_nc_ss=7a22e&oh=00_AQNqvAeFwSxJfMTe7TcnlFQhVY_38AjH5C9wc7Anno9zMg&oe=6AC5BE95",
+          "type": "video",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "media_type": "video",
+      "timestamp": "2026-04-09T16:01:25.000Z",
+      "likes_count": 163,
+      "comments_count": 29,
+      "extracted": {
+        "property_type": "property",
+        "price": null,
+        "location": "link in bio",
+        "area": null
+      },
+      "source": "apify",
+      "created_at": "2026-10-02T17:30:45.754Z",
+      "updated_at": "2026-10-02T17:30:45.754Z",
+      "is_removed": false
+    },
+    {
+      "id": "3627288538298510581",
+      "instagram_post_id": "3627288538298510581",
+      "shortcode": "DJWt7UXIOz1",
+      "channel_id": "reba",
+      "original_url": "https://www.instagram.com/p/DJWt7UXIOz1/",
+      "caption": "Let’s put a key ring on it and help you find the one! 🏡 #NearlyHome @realtordotcom #ad",
+      "media": [
+        {
+          "url": "https://scontent-atl3-2.cdninstagram.com/v/t51.71878-15/495658750_1677604499809646_4325539118019813735_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=105&ig_cache_key=MzYyNzI4ODUzODI5ODUxMDU4MTExOTUwMzQyNDU0NTQ2Mzg%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fbmZyYW1lX2NvdmVyX2ZyYW1lLkMyIn0%3D&_nc_ohc=OnO7hCvfynsQ7kNvwEInmPA&_nc_oc=AdrK3pczJs5Afxz28-hKI-QJ3H965mu-yTJ0Q9_278cW1Y7AVbz9DumGE1bAwDdLOPpmIT3KgIbJ_Ss-Z3gv6Y_t&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_gid=KMHGxIGLi-ACWYWac7uLeA&_nc_ss=7a22e&oh=00_AQOxQmkhHwC78v0U0TwbeChJvShhwEOlUutZWRfqQuSKUA&oe=6AC5CA91",
+          "type": "video",
+          "width": 1136,
+          "height": 640
+        }
+      ],
+      "media_type": "video",
+      "timestamp": "2025-05-07T14:02:50.000Z",
+      "likes_count": 1713,
+      "comments_count": 66,
+      "extracted": {
+        "property_type": "property",
+        "price": null,
+        "location": null,
+        "area": null
+      },
+      "source": "apify",
+      "created_at": "2026-10-02T17:30:45.754Z",
+      "updated_at": "2026-10-02T17:30:45.754Z",
       "is_removed": false
     }
   ],
   "next_cursor": null,
-  "page_size": 25
+  "page_size": 20
 }
