@@ -1,6 +1,5 @@
 plugins {
-    id("com.android.library") version "8.13.2"
-    kotlin("android") version "2.0.21"
+    id("com.android.library") version "9.4.1"
 }
 
 android {
@@ -9,17 +8,18 @@ android {
     buildToolsVersion = "34.0.0"
 
     defaultConfig {
-        minSdk = 21
-        targetSdk = 34
+        minSdk = 23
     }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+}
 
-    kotlin {
-        jvmToolchain(17)
+kotlin {
+    compilerOptions {
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
     }
 }
 

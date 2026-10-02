@@ -1,7 +1,6 @@
 plugins {
-    id("com.android.application") version "8.13.2"
-    kotlin("android") version "2.0.21"
-    id("com.google.devtools.ksp") version "2.0.21-1.0.25"
+    id("com.android.application") version "9.4.1"
+    id("com.google.devtools.ksp") version "2.1.0-1.0.29"
 }
 
 android {
@@ -11,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.realestate.sample"
-        minSdk = 21
+        minSdk = 23
         targetSdk = 34
         versionCode = 1
         versionName = "0.1"
@@ -28,14 +27,16 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlin {
-        jvmToolchain(17)
-    }
-
     sourceSets {
         getByName("main") {
             manifest.srcFile("src/main/manifest/AndroidManifest.xml")
         }
+    }
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
     }
 }
 
@@ -58,7 +59,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 
     // Room for bookmarks + offline feed cache (TODO item H)
-    val roomVersion = "2.6.1"
+    val roomVersion = "2.8.5"
     implementation("androidx.room:room-runtime:$roomVersion")
     implementation("androidx.room:room-ktx:$roomVersion")
     ksp("androidx.room:room-compiler:$roomVersion")
