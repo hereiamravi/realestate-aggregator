@@ -5,7 +5,9 @@ import retrofit2.Response
 import retrofit2.http.*
 
 interface ApiService {
-  @GET("/feed")
+  // NOTE: relative paths (no leading slash) so Retrofit keeps the /v1/ in the base URL,
+  // e.g. baseUrl http://10.0.2.2:8080/v1/ + "feed" -> .../v1/feed (matches mock + openapi server).
+  @GET("feed")
   suspend fun getFeed(
     @Query("page_size") pageSize: Int = 25,
     @Query("cursor") cursor: String? = null,
@@ -17,37 +19,37 @@ interface ApiService {
     @Query("media_type") mediaType: String? = null
   ): Response<PostListResponse>
 
-  @GET("/posts/{post_id}")
+  @GET("posts/{post_id}")
   suspend fun getPost(@Path("post_id") postId: String): Response<Post>
 
-  @GET("/channels")
+  @GET("channels")
   suspend fun getChannels(@Query("include_inactive") includeInactive: Boolean? = false): Response<List<Channel>>
 
-  @GET("/channels/{channel_id}")
+  @GET("channels/{channel_id}")
   suspend fun getChannel(@Path("channel_id") channelId: String): Response<Channel>
 
-  @GET("/bookmarks")
+  @GET("bookmarks")
   suspend fun getBookmarks(@Query("page_size") pageSize: Int = 25, @Query("cursor") cursor: String? = null): Response<Map<String, Any>>
 
-  @POST("/bookmarks")
+  @POST("bookmarks")
   suspend fun createBookmark(@Body body: Map<String, String>): Response<Bookmark>
 
-  @DELETE("/bookmarks/{bookmark_id}")
+  @DELETE("bookmarks/{bookmark_id}")
   suspend fun deleteBookmark(@Path("bookmark_id") bookmarkId: String): Response<Unit>
 
   // Admin endpoints (require Bearer admin token)
-  @POST("/admin/channels")
+  @POST("admin/channels")
   suspend fun adminCreateChannel(@Body body: Map<String, Any>): Response<Channel>
 
-  @PATCH("/admin/channels/{channel_id}")
+  @PATCH("admin/channels/{channel_id}")
   suspend fun adminUpdateChannel(@Path("channel_id") channelId: String, @Body body: Map<String, Any>): Response<Channel>
 
-  @POST("/admin/channels/{channel_id}/fetch")
+  @POST("admin/channels/{channel_id}/fetch")
   suspend fun adminFetchChannel(@Path("channel_id") channelId: String): Response<Map<String, String>>
 
-  @POST("/admin/webhook")
+  @POST("admin/webhook")
   suspend fun adminWebhook(@Body body: Map<String, Any>): Response<Unit>
 
-  @GET("/admin/fetch-logs")
+  @GET("admin/fetch-logs")
   suspend fun adminFetchLogs(@Query("channel_id") channelId: String? = null, @Query("status") status: String? = null): Response<List<FetchLog>>
 }

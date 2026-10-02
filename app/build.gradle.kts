@@ -1,10 +1,13 @@
 plugins {
-    id("com.android.application")
-    kotlin("android")
+    id("com.android.application") version "8.13.2"
+    kotlin("android") version "2.0.21"
+    id("com.google.devtools.ksp") version "2.0.21-1.0.25"
 }
 
 android {
+    namespace = "com.realestate.sample"
     compileSdk = 34
+    buildToolsVersion = "34.0.0"
 
     defaultConfig {
         applicationId = "com.realestate.sample"
@@ -28,10 +31,12 @@ android {
     kotlin {
         jvmToolchain(17)
     }
-}
 
-repositories {
-    mavenCentral()
+    sourceSets {
+        getByName("main") {
+            manifest.srcFile("src/main/manifest/AndroidManifest.xml")
+        }
+    }
 }
 
 dependencies {
@@ -51,4 +56,10 @@ dependencies {
 
     // Coroutines (should be already in sdk but app may use lifecycleScope)
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+
+    // Room for bookmarks + offline feed cache (TODO item H)
+    val roomVersion = "2.6.1"
+    implementation("androidx.room:room-runtime:$roomVersion")
+    implementation("androidx.room:room-ktx:$roomVersion")
+    ksp("androidx.room:room-compiler:$roomVersion")
 }
