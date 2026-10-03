@@ -4,6 +4,7 @@ const fs = require('fs');
 const cors = require('cors');
 const {
   fetchApifyInstagramPosts,
+  fetchApifyRealEstateByFilter,
   fetchApifyProfileInfo,
   fetchApifyComments,
   searchApifyHashtag,
@@ -57,41 +58,67 @@ function decodeCursor(cursor) {
   return Number.isNaN(n) || n < 0 ? 0 : n;
 }
 
-// GET /v1/feed
+// GET /v1/feed with Location Filters (City, Division, SubUrban, PropertyType)
 app.get('/v1/feed', async (req, res) => {
   const apifyToken = process.env.APIFY_TOKEN || process.env.PROVIDER_TOKEN;
+  const { city, division, sub_urban, property_type, q } = req.query;
 
-  // Whenever a valid Apify API token is configured, automatically fetch live Instagram posts
-  if (apifyToken && apifyToken !== 'your_apify_api_token_here') {
+  const hasLocationFilter = (city && city !== 'All Cities') ||
+                            (sub_urban && sub_urban !== 'All Areas') ||
+                            (property_type && property_type !== 'All Types');
+
+  if (hasLocationFilter && apifyToken && apifyToken !== 'your_apify_api_token_here') {
     try {
-      const handles = req.query.handles ? req.query.handles.split(',') : ['realtordotcom', 'realestate'];
-      console.log(`[Apify Scraper] Fetching live Instagram posts for handles: ${handles.join(', ')}...`);
-      const livePosts = await fetchApifyInstagramPosts({ usernames: handles, limit: 10, apifyToken });
+      console.log(`[Apify Scraper] Fetching posts for Location Filters: City=${city}, SubUrban=${sub_urban}, PropertyType=${property_type}...`);
+      const filteredPosts = await fetchApifyRealEstateByFilter({
+        city,
+        division,
+        subUrban: sub_urban,
+        propertyType: property_type,
+        limit: 10,
+        apifyToken
+      });
 
-      if (livePosts.length > 0) {
-        console.log(`[Apify Scraper] Successfully fetched ${livePosts.length} live Instagram posts!`);
+      if (filteredPosts.length > 0) {
         const feed = loadFeed();
-
-        // Remove old mock fallback posts if real posts are fetched
-        const realItems = feed.items.filter(p => p.source === 'apify');
-        const existingIds = new Set(realItems.map(p => p.id));
-        const newPosts = livePosts.filter(p => !existingIds.has(p.id));
-
-        feed.items = [...livePosts, ...realItems];
+        const existingIds = new Set(feed.items.map(p => p.id));
+        const newPosts = filteredPosts.filter(p => !existingIds.has(p.id));
+        feed.items = [...newPosts, ...feed.items];
         saveFeed(feed);
       }
     } catch (err) {
-      console.error('[Apify Scraper Error]', err.message);
+      console.error('[Apify Filter Fetch Error]', err.message);
     }
   }
 
-  const feed = loadFeed();
+  let feed = loadFeed();
+  let items = feed.items;
+
+  // Filter items in memory by City / SubUrban / PropertyType / Query if specified
+  if (city && city !== 'All Cities') {
+    const cLower = city.toLowerCase();
+    items = items.filter(p => p.caption?.toLowerCase().includes(cLower) || p.extracted?.location?.toLowerCase().includes(cLower));
+  }
+  if (sub_urban && sub_urban !== 'All Areas') {
+    const sLower = sub_urban.toLowerCase();
+    items = items.filter(p => p.caption?.toLowerCase().includes(sLower) || p.extracted?.location?.toLowerCase().includes(sLower));
+  }
+  if (property_type && property_type !== 'All Types') {
+    const pLower = property_type.toLowerCase();
+    items = items.filter(p => p.extracted?.property_type?.toLowerCase() === pLower || p.caption?.toLowerCase().includes(pLower));
+  }
+  if (q) {
+    const qLower = q.toLowerCase();
+    items = items.filter(p => p.caption?.toLowerCase().includes(qLower));
+  }
+
   const pageSize = Math.min(parseInt(req.query.page_size, 10) || 25, 100);
   const offset = decodeCursor(req.query.cursor);
-  const items = feed.items.slice(offset, offset + pageSize);
-  const nextOffset = offset + items.length;
-  const next_cursor = nextOffset < feed.items.length ? String(nextOffset) : null;
-  res.json({ items, next_cursor, page_size: pageSize });
+  const pageItems = items.slice(offset, offset + pageSize);
+  const nextOffset = offset + pageItems.length;
+  const next_cursor = nextOffset < items.length ? String(nextOffset) : null;
+
+  res.json({ items: pageItems, next_cursor, page_size: pageSize });
 });
 
 // Admin endpoint to trigger Instagram fetch for a specific channel/handle
@@ -126,7 +153,7 @@ app.post('/v1/admin/channels/:id/fetch', async (req, res) => {
   }
 });
 
-// 1. Live Profile Info Endpoint
+// Live Profile Info Endpoint
 app.get('/v1/channels/:id/profile', async (req, res) => {
   const handle = req.params.id;
   const apifyToken = process.env.APIFY_TOKEN || process.env.PROVIDER_TOKEN;
@@ -149,7 +176,7 @@ app.get('/v1/channels/:id/profile', async (req, res) => {
   });
 });
 
-// 2. Live Comments Endpoint
+// Live Comments Endpoint
 app.get('/v1/posts/:id/comments', async (req, res) => {
   const postId = req.params.id;
   const feed = loadFeed();
@@ -169,7 +196,7 @@ app.get('/v1/posts/:id/comments', async (req, res) => {
   res.json({ post_id: postId, comments: [] });
 });
 
-// 3. Hashtag & Search Volume Endpoint
+// Hashtag Search Endpoint
 app.get('/v1/hashtags/search', async (req, res) => {
   const hashtag = req.query.q || 'realestate';
   const apifyToken = process.env.APIFY_TOKEN || process.env.PROVIDER_TOKEN;
@@ -186,7 +213,7 @@ app.get('/v1/hashtags/search', async (req, res) => {
   res.json({ hashtag: `#${hashtag}`, total_posts: 0, posts: [] });
 });
 
-// 4. Place / Location Search Endpoint
+// Location Search Endpoint
 app.get('/v1/locations/search', async (req, res) => {
   const query = req.query.q || 'Mumbai';
   const apifyToken = process.env.APIFY_TOKEN || process.env.PROVIDER_TOKEN;

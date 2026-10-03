@@ -9,7 +9,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.realestate.sdk.models.Post
-import kotlin.text.Regex
 
 class FeedAdapter(
     private val onClick: (Post) -> Unit,
@@ -51,36 +50,52 @@ class FeedAdapter(
     class VH(view: View) : RecyclerView.ViewHolder(view) {
         private val thumbnail: ImageView = view.findViewById(R.id.thumbnail)
         private val caption: TextView = view.findViewById(R.id.caption)
-        private val propertyInfo: TextView = view.findViewById(R.id.propertyInfo)
+        private val priceBadge: TextView = view.findViewById(R.id.priceBadge)
+        private val propertyTypeTag: TextView = view.findViewById(R.id.propertyTypeTag)
+        private val locationText: TextView = view.findViewById(R.id.locationText)
         private val bookmarkButton: ImageButton = view.findViewById(R.id.bookmarkButton)
 
         fun bind(post: Post, isBookmarked: Boolean = false, onBookmarkClick: ((Post) -> Unit)? = null) {
-            // Load thumbnail from first media item
+            // Hero Thumbnail
             post.media?.firstOrNull()?.let { mediaItem ->
-                thumbnail.load(mediaItem.url)
+                thumbnail.load(mediaItem.url) {
+                    crossfade(true)
+                }
             }
 
-            // Set caption
-            caption.text = post.caption
+            // Caption
+            caption.text = post.caption ?: "No description available"
 
-            // Set property info (property type and price)
-            val propertyType = post.extracted?.property_type
-            val priceValue = post.extracted?.price?.value
-            val currency = post.extracted?.price?.currency
-            
-            val propertyInfoText = buildString {
-                append(propertyType ?: "Property")
-                append(" | ")
-                append(if (priceValue != null) {
-                    val formatted = if (currency != null) "${currency} " else ""
-                    formatted + priceValue.toString().replace(Regex("\\B(?=(\\d{3})+(?!\\d))"), ",")
+            // Price Badge
+            val rawPrice = post.extracted?.price?.raw
+            val priceVal = post.extracted?.price?.value
+            val currency = post.extracted?.price?.currency ?: "INR"
+
+            if (!rawPrice.isNullOrBlank()) {
+                priceBadge.text = rawPrice
+            } else if (priceVal != null && priceVal > 0) {
+                val symbol = if (currency == "INR") "₹" else "$"
+                val num = priceVal.toLong()
+                priceBadge.text = if (num >= 10000000) {
+                    "$symbol${String.format("%.2f", num / 10000000.0)} Cr"
+                } else if (num >= 100000) {
+                    "$symbol${String.format("%.2f", num / 100000.0)} Lakhs"
                 } else {
-                    "Price not available"
-                })
+                    "$symbol$num"
+                }
+            } else {
+                priceBadge.text = "Price on Request"
             }
-            propertyInfo.text = propertyInfoText
 
-            // Bookmark state: use alpha to indicate state (no extra drawable needed)
+            // Property Type Tag
+            val propType = post.extracted?.property_type?.uppercase() ?: "PROPERTY"
+            propertyTypeTag.text = propType
+
+            // Location
+            val loc = post.extracted?.location ?: "Prime Location"
+            locationText.text = "📍 $loc"
+
+            // Bookmark button
             bookmarkButton.alpha = if (isBookmarked) 1.0f else 0.4f
             bookmarkButton.contentDescription = if (isBookmarked) "Bookmarked" else "Bookmark"
             bookmarkButton.setOnClickListener { onBookmarkClick?.invoke(post) }

@@ -59,13 +59,46 @@ async function fetchApifyInstagramPosts({ usernames = [], hashtags = [], urls = 
 }
 
 /**
- * 2. Profile Info (Followers, bio, profile pic, website, posts count)
+ * Real Estate Location Filter Fetcher
+ * Combines City, Division, SubUrban, and PropertyType with predefined real estate hashtags.
+ */
+async function fetchApifyRealEstateByFilter({ city, division, subUrban, propertyType, limit = 15, apifyToken }) {
+  const hashtags = ['realestate', 'propertyforsale'];
+
+  if (city && city !== 'All Cities') {
+    const cleanCity = city.replace(/[^a-zA-Z]/g, '').toLowerCase();
+    hashtags.push(`${cleanCity}realestate`);
+    hashtags.push(`${cleanCity}property`);
+  }
+
+  if (subUrban && subUrban !== 'All Areas') {
+    const cleanArea = subUrban.replace(/[^a-zA-Z]/g, '').toLowerCase();
+    hashtags.push(`${cleanArea}flats`);
+    hashtags.push(`${cleanArea}realestate`);
+  }
+
+  if (propertyType && propertyType !== 'All Types') {
+    const cleanType = propertyType.replace(/[^a-zA-Z]/g, '').toLowerCase();
+    hashtags.push(`${cleanType}forsale`);
+  }
+
+  const posts = await fetchApifyInstagramPosts({ hashtags, limit, apifyToken });
+
+  return posts.map(p => {
+    if (p.extracted) {
+      if (!p.extracted.location && (subUrban || city)) {
+        p.extracted.location = [subUrban, city].filter(c => c && !c.startsWith('All')).join(', ');
+      }
+    }
+    return p;
+  });
+}
+
+/**
+ * Profile Info
  */
 async function fetchApifyProfileInfo(username, apifyToken) {
-  const input = {
-    usernames: [username]
-  };
-
+  const input = { usernames: [username] };
   try {
     const rawItems = await callApifyActor('apify~instagram-profile-scraper', input, apifyToken);
     if (!Array.isArray(rawItems) || rawItems.length === 0) return null;
@@ -92,7 +125,7 @@ async function fetchApifyProfileInfo(username, apifyToken) {
 }
 
 /**
- * 3. Comments (from Post or Reel URL)
+ * Comments
  */
 async function fetchApifyComments(postUrl, limit = 20, apifyToken) {
   const input = {
@@ -115,7 +148,7 @@ async function fetchApifyComments(postUrl, limit = 20, apifyToken) {
 }
 
 /**
- * 4. Hashtags & Search Volume
+ * Hashtag Search
  */
 async function searchApifyHashtag(hashtag, apifyToken) {
   const cleanTag = hashtag.replace(/^#/, '');
@@ -128,7 +161,7 @@ async function searchApifyHashtag(hashtag, apifyToken) {
 }
 
 /**
- * 5. Location / Place Search
+ * Location Search
  */
 async function searchApifyLocation(locationQuery, limit = 10, apifyToken) {
   const posts = await fetchApifyInstagramPosts({ hashtags: [locationQuery.replace(/\s+/g, '')], limit: limit, apifyToken });
@@ -140,9 +173,6 @@ async function searchApifyLocation(locationQuery, limit = 10, apifyToken) {
   };
 }
 
-/**
- * Transform raw Apify post item to Post schema
- */
 function transformApifyPost(item, idx) {
   const caption = item.caption || item.text || item.captionText || '';
   const extracted = extractRealEstateFields(caption);
@@ -191,6 +221,7 @@ function transformApifyPost(item, idx) {
 
 module.exports = {
   fetchApifyInstagramPosts,
+  fetchApifyRealEstateByFilter,
   fetchApifyProfileInfo,
   fetchApifyComments,
   searchApifyHashtag,

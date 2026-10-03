@@ -9,6 +9,9 @@ interface ApiService {
   suspend fun getFeed(
     @Query("page_size") pageSize: Int = 25,
     @Query("cursor") cursor: String? = null,
+    @Query("city") city: String? = null,
+    @Query("division") division: String? = null,
+    @Query("sub_urban") subUrban: String? = null,
     @Query("channel_id") channelId: String? = null,
     @Query("property_type") propertyType: String? = null,
     @Query("q") q: String? = null,
