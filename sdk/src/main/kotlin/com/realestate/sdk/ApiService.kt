@@ -5,8 +5,6 @@ import retrofit2.Response
 import retrofit2.http.*
 
 interface ApiService {
-  // NOTE: relative paths (no leading slash) so Retrofit keeps the /v1/ in the base URL,
-  // e.g. baseUrl http://10.0.2.2:8080/v1/ + "feed" -> .../v1/feed (matches mock + openapi server).
   @GET("feed")
   suspend fun getFeed(
     @Query("page_size") pageSize: Int = 25,
@@ -28,6 +26,18 @@ interface ApiService {
   @GET("channels/{channel_id}")
   suspend fun getChannel(@Path("channel_id") channelId: String): Response<Channel>
 
+  @GET("channels/{channel_id}/profile")
+  suspend fun getChannelProfile(@Path("channel_id") channelId: String): Response<Channel>
+
+  @GET("posts/{post_id}/comments")
+  suspend fun getPostComments(@Path("post_id") postId: String): Response<Map<String, Any>>
+
+  @GET("hashtags/search")
+  suspend fun searchHashtags(@Query("q") query: String): Response<Map<String, Any>>
+
+  @GET("locations/search")
+  suspend fun searchLocations(@Query("q") query: String): Response<Map<String, Any>>
+
   @GET("bookmarks")
   suspend fun getBookmarks(@Query("page_size") pageSize: Int = 25, @Query("cursor") cursor: String? = null): Response<Map<String, Any>>
 
@@ -37,7 +47,7 @@ interface ApiService {
   @DELETE("bookmarks/{bookmark_id}")
   suspend fun deleteBookmark(@Path("bookmark_id") bookmarkId: String): Response<Unit>
 
-  // Admin endpoints (require Bearer admin token)
+  // Admin endpoints
   @POST("admin/channels")
   suspend fun adminCreateChannel(@Body body: Map<String, Any>): Response<Channel>
 

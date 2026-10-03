@@ -2,7 +2,13 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const cors = require('cors');
-const { fetchApifyInstagramPosts } = require('./services/apifyProvider');
+const {
+  fetchApifyInstagramPosts,
+  fetchApifyProfileInfo,
+  fetchApifyComments,
+  searchApifyHashtag,
+  searchApifyLocation
+} = require('./services/apifyProvider');
 
 // Simple .env parser
 const ENV_FILE = path.join(__dirname, '.env');
@@ -60,7 +66,7 @@ app.get('/v1/feed', async (req, res) => {
     try {
       const handles = req.query.handles ? req.query.handles.split(',') : ['realtordotcom', 'realestate'];
       console.log(`[Apify Scraper] Fetching live Instagram posts for handles: ${handles.join(', ')}...`);
-      const livePosts = await fetchApifyInstagramPosts(handles, 10, apifyToken);
+      const livePosts = await fetchApifyInstagramPosts({ usernames: handles, limit: 10, apifyToken });
 
       if (livePosts.length > 0) {
         console.log(`[Apify Scraper] Successfully fetched ${livePosts.length} live Instagram posts!`);
@@ -101,11 +107,11 @@ app.post('/v1/admin/channels/:id/fetch', async (req, res) => {
   }
 
   try {
-    const livePosts = await fetchApifyInstagramPosts([handle], 10, apifyToken);
+    const livePosts = await fetchApifyInstagramPosts({ usernames: [handle], limit: 10, apifyToken });
     const feed = loadFeed();
     const existingIds = new Set(feed.items.map(p => p.id));
     const newPosts = livePosts.filter(p => !existingIds.has(p.id));
-    feed.items = [...livePosts, ...feed.items];
+    feed.items = [...newPosts, ...feed.items];
     saveFeed(feed);
 
     res.json({
@@ -118,6 +124,83 @@ app.post('/v1/admin/channels/:id/fetch', async (req, res) => {
     console.error('Error fetching channel from Apify:', err);
     res.status(500).json({ code: 500, message: err.message });
   }
+});
+
+// 1. Live Profile Info Endpoint
+app.get('/v1/channels/:id/profile', async (req, res) => {
+  const handle = req.params.id;
+  const apifyToken = process.env.APIFY_TOKEN || process.env.PROVIDER_TOKEN;
+
+  if (apifyToken && apifyToken !== 'your_apify_api_token_here') {
+    try {
+      const profile = await fetchApifyProfileInfo(handle, apifyToken);
+      if (profile) return res.json(profile);
+    } catch (err) {
+      console.error('Failed to fetch Apify profile info:', err.message);
+    }
+  }
+
+  res.json({
+    id: handle,
+    instagram_handle: handle,
+    display_name: handle,
+    profile_url: null,
+    source: 'mock'
+  });
+});
+
+// 2. Live Comments Endpoint
+app.get('/v1/posts/:id/comments', async (req, res) => {
+  const postId = req.params.id;
+  const feed = loadFeed();
+  const post = feed.items.find(p => p.id === postId || p.instagram_post_id === postId);
+  const postUrl = post ? post.original_url : `https://www.instagram.com/p/${postId}/`;
+
+  const apifyToken = process.env.APIFY_TOKEN || process.env.PROVIDER_TOKEN;
+  if (apifyToken && apifyToken !== 'your_apify_api_token_here' && postUrl) {
+    try {
+      const comments = await fetchApifyComments(postUrl, 20, apifyToken);
+      return res.json({ post_id: postId, comments: comments });
+    } catch (err) {
+      console.error('Failed to fetch Apify comments:', err.message);
+    }
+  }
+
+  res.json({ post_id: postId, comments: [] });
+});
+
+// 3. Hashtag & Search Volume Endpoint
+app.get('/v1/hashtags/search', async (req, res) => {
+  const hashtag = req.query.q || 'realestate';
+  const apifyToken = process.env.APIFY_TOKEN || process.env.PROVIDER_TOKEN;
+
+  if (apifyToken && apifyToken !== 'your_apify_api_token_here') {
+    try {
+      const result = await searchApifyHashtag(hashtag, apifyToken);
+      return res.json(result);
+    } catch (err) {
+      console.error('Failed to search Apify hashtag:', err.message);
+    }
+  }
+
+  res.json({ hashtag: `#${hashtag}`, total_posts: 0, posts: [] });
+});
+
+// 4. Place / Location Search Endpoint
+app.get('/v1/locations/search', async (req, res) => {
+  const query = req.query.q || 'Mumbai';
+  const apifyToken = process.env.APIFY_TOKEN || process.env.PROVIDER_TOKEN;
+
+  if (apifyToken && apifyToken !== 'your_apify_api_token_here') {
+    try {
+      const result = await searchApifyLocation(query, 10, apifyToken);
+      return res.json(result);
+    } catch (err) {
+      console.error('Failed to search Apify location:', err.message);
+    }
+  }
+
+  res.json({ location: query, count: 0, posts: [] });
 });
 
 app.get('/v1/posts/:id', (req, res) => {
